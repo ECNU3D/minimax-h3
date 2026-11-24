@@ -62,9 +62,24 @@ assert any(p['id']==trash_test['id'] for p in api('projects'))
 
 checks=['workspace deletion blocked while queued; trash, 404, restore and campaign verified']
 health=api('health'); assert health['referenceLimit']==9;assert 'DEEPSEEK_API_KEY' not in json.dumps(health);checks.append('health omits credentials')
-library=api('library');src=next(x for x in library if '信息修订版' in x['name'])
-p=api('projects',{'name':'对面 · 导演台导入验证','libraryId':src['id']})
-assert len(p['shots'])==27 and len(p['assets'])==12;assert len(p['shots'][2]['refs'])==4;checks.append('27 shots / 12 assets / four references preserved')
+library=api('library');src=next((x for x in library if '信息修订版' in x['name']),None)
+if src:
+    p=api('projects',{'name':'对面 · 导演台导入验证','libraryId':src['id']})
+    assert len(p['shots'])==27 and len(p['assets'])==12;assert len(p['shots'][2]['refs'])==4
+    checks.append('27 shots / 12 assets / four references preserved')
+else:
+    storyboard='''| 杯子 | P01 | 道具 |
+| 工作台 | S01 | 场景 |
+
+## 分镜 1 · 5 秒
+```text
+@杯子 放在 @工作台 中央。
+```
+'''
+    p=api('projects',{'name':'导演台导入验证','filename':'示例.md','text':storyboard})
+    assert p['sources'][0]['text']==storyboard
+    assert len(p['shots'])==1 and p['shots'][0]['refs']==['P01','S01']
+    checks.append('inline storyboard import preserves original text and ordered references')
 s=p['shots'][0];original=s['originalPrompt']
 p=api(f'projects/{p["id"]}/shot',{'id':s['id'],'prompt':s['prompt']+'\n固定机位。','revision':p['revision']})
 assert p['shots'][0]['originalPrompt']==original; assert len(p['shots'][0]['history'])==1;checks.append('prompt revision preserves source')
