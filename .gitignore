@@ -248,6 +248,7 @@ secrets.json
 !/.env.example
 !/LICENSE
 !/README.md
+!/README.en.md
 !/configs/
 !/docs/
 !/h3_director/
