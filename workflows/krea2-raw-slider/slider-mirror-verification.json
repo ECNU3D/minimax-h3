@@ -1,0 +1,10 @@
+{
+  "repo": "Sentinel7/krea2",
+  "revision": "6fd28a000e144e827b20ea59b1a4f54bfc3d5ba3",
+  "source_path": "2540187/3131773/breast_size_v2_krea2_loraholic.safetensors",
+  "path": "loras/breast_size_v2_krea2_loraholic.safetensors",
+  "size": 35769968,
+  "sha256": "24c2acd5d3bf88920a084984099928c85ed17c985d914b8ceb19a1731aafd07f",
+  "verified_sha256": "24c2acd5d3bf88920a084984099928c85ed17c985d914b8ceb19a1731aafd07f",
+  "verified_at": "2026-09-21T06:34:44+0800"
+}

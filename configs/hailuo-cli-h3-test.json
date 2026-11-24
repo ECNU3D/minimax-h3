@@ -1,0 +1,11 @@
+{
+  "shotId": "luoflow-h3-omni-20261005-three-references",
+  "settings": { "site": "cn", "mode": "全能参考", "resolution": "768p", "durationSec": 4, "maxCredits": 28 },
+  "promptFile": "../runs/luoflow-h3-omni-20261005/prompt.txt",
+  "references": [
+    "../runs/luoflow-h3-omni-20261005/01-robot.png",
+    "../runs/luoflow-h3-omni-20261005/02-greenhouse.png",
+    "../runs/luoflow-h3-omni-20261005/03-watering-can.png"
+  ],
+  "outputDir": "../runs/luoflow-h3-omni-20261005/cli"
+}

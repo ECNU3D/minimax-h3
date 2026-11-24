@@ -1,0 +1,41 @@
+{
+  "source_video": "ComfyUI/output/video/white_reference_demo_h3_768p_00001_.mp4",
+  "source_video_sha256": "2004fc371f8bd6080cc018a23966500169a899e00902141dc73d616d24adcd89",
+  "sfx": {
+    "model": "audio/models/moss-sfx", "steps": 100, "cfg": 4.0, "sigma_shift": 5.0,
+    "jobs": [
+      {"id":"wind_101","seed":101,"seconds":10,"prompt":"A gentle outdoor breeze softly rustling dense green leaves, steady natural air movement, close detailed field recording, isolated wind ambience, no voices, no music."},
+      {"id":"wind_202","seed":202,"seconds":10,"prompt":"A gentle outdoor breeze softly rustling dense green leaves, steady natural air movement, close detailed field recording, isolated wind ambience, no voices, no music."},
+      {"id":"birds_101","seed":101,"seconds":10,"prompt":"A few small songbirds chirping intermittently in a peaceful garden, varied clear short calls with quiet gaps, natural field recording, no wind, no voices, no music."},
+      {"id":"birds_202","seed":202,"seconds":10,"prompt":"A few small songbirds chirping intermittently in a peaceful garden, varied clear short calls with quiet gaps, natural field recording, no wind, no voices, no music."},
+      {"id":"water_101","seed":101,"seconds":10,"prompt":"A small clear freshwater stream gently flowing over smooth pebbles, soft continuous trickling and bubbling, close detailed natural water recording, no birds, no voices, no music."},
+      {"id":"water_202","seed":202,"seconds":10,"prompt":"A small clear freshwater stream gently flowing over smooth pebbles, soft continuous trickling and bubbling, close detailed natural water recording, no birds, no voices, no music."},
+      {"id":"lantern_303","seed":303,"seconds":5,"prompt":"One brass lantern gently placed onto a solid wooden table: a single soft wooden thud with a brief delicate metallic rattle, then quiet. Close dry foley recording, no voices, no music."}
+    ]
+  },
+  "design": {
+    "model": "audio/models/qwen-design",
+    "text": "风穿过温室，叶子轻轻摇晃。我提起那盏旧灯，仿佛听见了很久以前的故事。",
+    "jobs": [
+      {"id":"young_female","seed":4101,"instruct":"一位二十五岁左右的成年女性，普通话清晰自然，音色温暖通透，中等偏高音区。平静而亲近地讲述故事，语速适中，轻柔但不耳语。"},
+      {"id":"middle_male","seed":4102,"instruct":"一位四十五岁左右的成年男性，标准普通话，低沉厚实的男中音，略有胸腔共鸣。沉稳克制地讲述故事，语速适中，吐字清楚，不夸张。"},
+      {"id":"elderly_female","seed":4103,"instruct":"一位七十岁左右的老年女性，清晰的普通话，音色温暖而略带沙哑，柔和的气息感。带着回忆的感觉自然讲述，语速适中，不要刻意颤抖或表演腔。"}
+    ]
+  },
+  "clone": {
+    "model": "audio/models/qwen-base", "reference_id":"young_female",
+    "jobs": [
+      {"id":"narration_1","seed":4201,"text":"风穿过叶间，我提起旧灯，仿佛唤醒了温室的记忆。"},
+      {"id":"narration_2","seed":4202,"text":"别急，等光再亮一些，我们就能看清桌上的刻痕。"},
+      {"id":"narration_3","seed":4203,"text":"原来它一直在这里，静静等着有人回来。"}
+    ]
+  },
+  "music": {
+    "model":"audio/models/ace", "dit":"acestep-v15-sft", "lm":"acestep-5Hz-lm-1.7B",
+    "steps":50, "cfg":7.0, "duration":30,
+    "jobs":[
+      {"id":"quiet_mystery","seed":5101,"bpm":72,"keyscale":"D minor","caption":"Instrumental cinematic underscore for a quiet sunlit old greenhouse and the discovery of a brass lantern. Intimate felt piano, delicate low sustained strings, sparse soft celesta, gentle evolving harmony, restrained mysterious atmosphere with warmth and curiosity, 72 BPM, D minor. Minimal arrangement leaves space for narration, no singing, no vocals, no choir, no drums. A coherent thirty-second cue with a gentle beginning and a resolved soft ending."},
+      {"id":"tense_suspense","seed":5102,"bpm":96,"keyscale":"D minor","caption":"Instrumental cinematic suspense underscore. Quiet low cello ostinato, muted strings, subtle deep percussion and restrained dark piano, slowly rising tension for uncovering an old secret, 96 BPM, D minor. Spacious mix with room for dialogue, no singing, no vocals, no choir, no aggressive trailer hits. A coherent thirty-second cue with a subtle opening, rising middle and a short decisive ending."}
+    ]
+  }
+}

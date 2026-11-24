@@ -1,0 +1,14 @@
+{
+  "repo": "Comfy-Org/MiniMax-H3",
+  "revision": "8118df0eaf5e96acc56eed5daf5229ca81cc05cf",
+  "upstream": "https://github.com/Pika-Labs/Pika-H3-Flex",
+  "license": "MiniMax H3 Community License Agreement",
+  "files": [
+    {
+      "path": "loras/pika_h3_flex_ref2va_v1_bf16.safetensors",
+      "source_path": "loras/pika_h3_flex_ref2va_v1_bf16.safetensors",
+      "size": 1956172304,
+      "sha256": "de3745ceb7d8d5c20898dd8fa3a05f1c0b00089ccd55297b2a8bab95c766b0e0"
+    }
+  ]
+}

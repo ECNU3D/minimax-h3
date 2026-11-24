@@ -1,0 +1,5 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# The optimizer verifies the bundled official guides byte for byte.
+/h3_director/agent/skills/h3-prompt-writing/** text eol=lf

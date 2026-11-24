@@ -1,0 +1,4 @@
+interface:
+  display_name: "海螺 H3 CLI"
+  short_description: "使用海螺订阅积分生成 H3 全能参考视频，批量提交并自动下载"
+  default_prompt: "使用 $hailuo-cli 为我生成 H3 全能参考视频，并下载保存结果。"

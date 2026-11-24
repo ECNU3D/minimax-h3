@@ -1,0 +1,376 @@
+{
+  "black-forest-labs/FLUX.2-klein-4b-fp8": {
+    "revision": "5b4408e59397a4a37ccb46afe426d8ed86379441",
+    "files": [
+      {
+        "type": "file",
+        "oid": "af079956a8c600b8319c6d266de4aa74366801e1",
+        "size": 1662,
+        "path": ".gitattributes"
+      },
+      {
+        "type": "file",
+        "oid": "0afa7632c1a195ea6627a3c53e6ebf18d1be3aa5",
+        "size": 9584,
+        "path": "LICENSE.md"
+      },
+      {
+        "type": "file",
+        "oid": "f773543376b0bb8d2867865950f3bc26d9cc652c",
+        "size": 7778,
+        "path": "README.md"
+      },
+      {
+        "type": "file",
+        "oid": "2bddd7e66fe9f88dc14ba0019d08e6b6a999d6be",
+        "size": 2506178,
+        "lfs": {
+          "oid": "2912ca5a7cb9ccbdc8627f8123894d28d8d5e5b0425e8907b3c8111659885ce0",
+          "size": 2506178,
+          "pointerSize": 132
+        },
+        "xetHash": "080a9d185eaa300cdf673f067e14250bf7754418996fce91ef82aabb296f4a49",
+        "path": "editing.jpg"
+      },
+      {
+        "type": "file",
+        "oid": "8d920e919019212c1c61b0fd6489a9a13b8128bd",
+        "size": 4070624520,
+        "lfs": {
+          "oid": "97ed34fe0567e436200f2faee3939b88f2b5d99f8af2a4dc16532c4245c0ccb6",
+          "size": 4070624520,
+          "pointerSize": 135
+        },
+        "xetHash": "15005cf50d1361f75c61f7d213d7969063e2aaea7523beefe5d1e085d173568d",
+        "path": "flux-2-klein-4b-fp8.safetensors"
+      },
+      {
+        "type": "file",
+        "oid": "bdce755b679f8475918ea0dadd1c60d1d5d5bd8e",
+        "size": 3386946,
+        "lfs": {
+          "oid": "78caed191515181abe87c10b6303a0fb58ae5518b8e7c7ed5847f406b377a0e4",
+          "size": 3386946,
+          "pointerSize": 132
+        },
+        "xetHash": "3b8e4a70069bbc711910dbbaf6f12ea7aca21b7eba2a6dd971678a03707d0e48",
+        "path": "others.jpg"
+      },
+      {
+        "type": "file",
+        "oid": "e6115d709967e5c7db658feefea906af756afa67",
+        "size": 2855711,
+        "lfs": {
+          "oid": "6cccc69a683c3f650eb149a006be54cdcd42eb92b367d2b8e65939d486d1946a",
+          "size": 2855711,
+          "pointerSize": 132
+        },
+        "xetHash": "06b9a9312dbd79f7106ca5d04be445af64b9feec7eb19c0d2afcbca2794c7e7a",
+        "path": "realism.jpg"
+      }
+    ]
+  },
+  "black-forest-labs/FLUX.2-klein-base-4b-fp8": {
+    "revision": "103db268c10d4d3921101b46057671f9ac460da6",
+    "files": [
+      {
+        "type": "file",
+        "oid": "af079956a8c600b8319c6d266de4aa74366801e1",
+        "size": 1662,
+        "path": ".gitattributes"
+      },
+      {
+        "type": "file",
+        "oid": "0afa7632c1a195ea6627a3c53e6ebf18d1be3aa5",
+        "size": 9584,
+        "path": "LICENSE.md"
+      },
+      {
+        "type": "file",
+        "oid": "e1c56f57f230ce896c861da43e75b3a1c8ed4326",
+        "size": 7924,
+        "path": "README.md"
+      },
+      {
+        "type": "file",
+        "oid": "2bddd7e66fe9f88dc14ba0019d08e6b6a999d6be",
+        "size": 2506178,
+        "lfs": {
+          "oid": "2912ca5a7cb9ccbdc8627f8123894d28d8d5e5b0425e8907b3c8111659885ce0",
+          "size": 2506178,
+          "pointerSize": 132
+        },
+        "xetHash": "080a9d185eaa300cdf673f067e14250bf7754418996fce91ef82aabb296f4a49",
+        "path": "editing.jpg"
+      },
+      {
+        "type": "file",
+        "oid": "384af87313164ebf487b39411c13c978f0203447",
+        "size": 4089498488,
+        "lfs": {
+          "oid": "44bab3a86fe98b85d21dd2a4729ebdc3ae51fb8a39f76e457e18c724219e6840",
+          "size": 4089498488,
+          "pointerSize": 135
+        },
+        "xetHash": "14cf50adf6e3837c4454b79520a5c73a8977bce4a7bb210eeb910ce59acbb83d",
+        "path": "flux-2-klein-base-4b-fp8.safetensors"
+      },
+      {
+        "type": "file",
+        "oid": "bdce755b679f8475918ea0dadd1c60d1d5d5bd8e",
+        "size": 3386946,
+        "lfs": {
+          "oid": "78caed191515181abe87c10b6303a0fb58ae5518b8e7c7ed5847f406b377a0e4",
+          "size": 3386946,
+          "pointerSize": 132
+        },
+        "xetHash": "3b8e4a70069bbc711910dbbaf6f12ea7aca21b7eba2a6dd971678a03707d0e48",
+        "path": "others.jpg"
+      },
+      {
+        "type": "file",
+        "oid": "e6115d709967e5c7db658feefea906af756afa67",
+        "size": 2855711,
+        "lfs": {
+          "oid": "6cccc69a683c3f650eb149a006be54cdcd42eb92b367d2b8e65939d486d1946a",
+          "size": 2855711,
+          "pointerSize": 132
+        },
+        "xetHash": "06b9a9312dbd79f7106ca5d04be445af64b9feec7eb19c0d2afcbca2794c7e7a",
+        "path": "realism.jpg"
+      }
+    ]
+  },
+  "Comfy-Org/vae-text-encorder-for-flux-klein-4b": {
+    "revision": "5f526678002e43af5551dadb73ce2e8c91b43afe",
+    "files": [
+      {
+        "type": "directory",
+        "oid": "1caf073998b54ab6a1f7228fc39c5a32494a4a74",
+        "size": 0,
+        "path": "split_files"
+      },
+      {
+        "type": "directory",
+        "oid": "2b1e8f6bcd1dc3cfce33eceefb45d112ee49c45e",
+        "size": 0,
+        "path": "split_files/diffusion_models"
+      },
+      {
+        "type": "directory",
+        "oid": "63ee9172b7b7001dde94aac094fe0debe9a24fb5",
+        "size": 0,
+        "path": "split_files/text_encoders"
+      },
+      {
+        "type": "directory",
+        "oid": "6b97272662d0b1ea3adef69da943f20dfd37e3b6",
+        "size": 0,
+        "path": "split_files/vae"
+      },
+      {
+        "type": "file",
+        "oid": "a6344aac8c09253b3b630fb776ae94478aa0275b",
+        "size": 1519,
+        "path": ".gitattributes"
+      },
+      {
+        "type": "file",
+        "oid": "ff691ae1474091a7acd5df13b3163fee9c0e03ea",
+        "size": 800,
+        "path": "README.md"
+      },
+      {
+        "type": "file",
+        "oid": "3c15db058e223ca2c93bfaead0d5f8a2875d6235",
+        "size": 7751105712,
+        "lfs": {
+          "oid": "ec3d4e733a771f61c052fb4856c48b336c55eaf2c65487c2a1faeb9bbda7a343",
+          "size": 7751105712,
+          "pointerSize": 135
+        },
+        "xetHash": "3d2a43fd022501eebe77b10ba31282d768d126129c83b9e5d4464bc9f5040bc0",
+        "path": "split_files/diffusion_models/flux-2-klein-4b.safetensors"
+      },
+      {
+        "type": "file",
+        "oid": "b8897dbe64f97aae92628e7c439e498be1670f6a",
+        "size": 7751105712,
+        "lfs": {
+          "oid": "9c5fed22b76baea749d88fc2abe3ad53245e7b21a0d353a762665eea00043b92",
+          "size": 7751105712,
+          "pointerSize": 135
+        },
+        "xetHash": "ac81f9ca8c08599d9ddbdec53c8cdef213a5e401b6f9bcfb8f132f2191cc6fec",
+        "path": "split_files/diffusion_models/flux-2-klein-base-4b.safetensors"
+      },
+      {
+        "type": "file",
+        "oid": "8eb608c38dfe7461d3a72a8c3c1c5db10da90ee0",
+        "size": 8044982048,
+        "lfs": {
+          "oid": "6c671498573ac2f7a5501502ccce8d2b08ea6ca2f661c458e708f36b36edfc5a",
+          "size": 8044982048,
+          "pointerSize": 135
+        },
+        "xetHash": "f459cd74b7868799ea82f97601a650afcedc399596dc262f302e3505761c9995",
+        "path": "split_files/text_encoders/qwen_3_4b.safetensors"
+      },
+      {
+        "type": "file",
+        "oid": "cdae375920f433a73f8b2970873a4529b189cfbb",
+        "size": 3848213998,
+        "lfs": {
+          "oid": "3eab03a77adb0ee5304a4e677d5c10ac22f9049c1d7c894adca4f8bb39206ca8",
+          "size": 3848213998,
+          "pointerSize": 135
+        },
+        "xetHash": "7179ff861f86b7ca4709075ae082508edbfa5edfc7a23415850a724c0cc276b1",
+        "path": "split_files/text_encoders/qwen_3_4b_fp4_flux2.safetensors"
+      },
+      {
+        "type": "file",
+        "oid": "78f8fcf4adb004763e3335b937a9d7a6dfa9f5b5",
+        "size": 336211292,
+        "lfs": {
+          "oid": "868fe7b343cc8f3a19dbcfcafbc3d5f888802be3f89bd81b65b3621a066ce8f3",
+          "size": 336211292,
+          "pointerSize": 134
+        },
+        "xetHash": "2d2ae7a1e3d7d2ee7da6bbe58d555a9a9d7c1909db79adaa1ecf75a67367536f",
+        "path": "split_files/vae/flux2-vae.safetensors"
+      }
+    ]
+  },
+  "Comfy-Org/flux2-dev": {
+    "revision": "ab9055628ea245000e610f2aa2c96f4746093546",
+    "files": [
+      {
+        "type": "directory",
+        "oid": "82ff494f31cea0c77ff650bb48208db296bdc527",
+        "size": 0,
+        "path": "split_files"
+      },
+      {
+        "type": "directory",
+        "oid": "b97adfda70c99021d54c0562527b7112fbc3ca7c",
+        "size": 0,
+        "path": "split_files/diffusion_models"
+      },
+      {
+        "type": "directory",
+        "oid": "cffac9c028ad72c08b734bebf0b8419228a10951",
+        "size": 0,
+        "path": "split_files/loras"
+      },
+      {
+        "type": "directory",
+        "oid": "87366e15680a53d528ee9654878fa63b47a6db23",
+        "size": 0,
+        "path": "split_files/text_encoders"
+      },
+      {
+        "type": "directory",
+        "oid": "1b5dc26f8cbedf863baa46af3d7053dd0ef8d816",
+        "size": 0,
+        "path": "split_files/vae"
+      },
+      {
+        "type": "file",
+        "oid": "0babc9e4d0e0874e89b3170d93fb07e45e8e02e5",
+        "size": 1608,
+        "path": ".gitattributes"
+      },
+      {
+        "type": "file",
+        "oid": "d3b19e6274dc788da305462f6393780fdb3d93bf",
+        "size": 1372,
+        "path": "README.md"
+      },
+      {
+        "type": "file",
+        "oid": "a899ec2db4cb0ec16581c4745cac51bd3d19f023",
+        "size": 35455599592,
+        "lfs": {
+          "oid": "863a82e4ff950a42a6b0e80bea824828f129eb1a8fbbdbd9e8cb29859127b486",
+          "size": 35455599592,
+          "pointerSize": 136
+        },
+        "xetHash": "2f159bd5e5a9511d9470e23f303b5e44da33c6c7ee037f29777679178a3430ac",
+        "path": "split_files/diffusion_models/flux2_dev_fp8mixed.safetensors"
+      },
+      {
+        "type": "file",
+        "oid": "b6080d5d855ef108d5fe0d817d379fe6204c91aa",
+        "size": 2760814872,
+        "lfs": {
+          "oid": "dfc97af0180d432269361a7bc36b4a7df6a2a3ffb630763f8c3343d3d1991d87",
+          "size": 2760814872,
+          "pointerSize": 135
+        },
+        "xetHash": "cabb037fabfc156a37fb27f8d1580591ee0667937d5e5aa0da4eddd7614c7739",
+        "path": "split_files/loras/Flux2TurboComfyv2.safetensors"
+      },
+      {
+        "type": "file",
+        "oid": "95cb37fc393a0b16c5c01b07da67c2ab07001b91",
+        "size": 2760814880,
+        "lfs": {
+          "oid": "011487390b8020baf22a9d543930c90d74a4809b7241bee6b0622777b17b413b",
+          "size": 2760814880,
+          "pointerSize": 135
+        },
+        "xetHash": "39039e629340aeb3fe4b50cf54d6b8c4f0ab259894971a79391bf130693edc18",
+        "path": "split_files/loras/Flux_2-Turbo-LoRA_comfyui.safetensors"
+      },
+      {
+        "type": "file",
+        "oid": "e907bf55ce3e6e6f07aff78d4cff95a13f94c219",
+        "size": 35584897447,
+        "lfs": {
+          "oid": "7d79902f60b1aeb3a6de2cfad02f4367b5e300a1387de3d03ac717cfa3df117c",
+          "size": 35584897447,
+          "pointerSize": 136
+        },
+        "xetHash": "a8711134ac2d06dd36b03914220ee54a43e7dd9a23eecbeca25107d78eed3382",
+        "path": "split_files/text_encoders/mistral_3_small_flux2_bf16.safetensors"
+      },
+      {
+        "type": "file",
+        "oid": "3e05d158a1f61ae7f315dceaca865d5dc84d3768",
+        "size": 12275678071,
+        "lfs": {
+          "oid": "1ee1ff334d78228d73049ef0ee4fcd21c1700536b5a45c06547af057f92463a7",
+          "size": 12275678071,
+          "pointerSize": 136
+        },
+        "xetHash": "4783ec24e51d266d33658c17d01f8be419f968d62c8d5b4789b70a13d664e240",
+        "path": "split_files/text_encoders/mistral_3_small_flux2_fp4_mixed.safetensors"
+      },
+      {
+        "type": "file",
+        "oid": "ee0cc6056219e9ef3805ba82f510d12f0941173b",
+        "size": 18034640095,
+        "lfs": {
+          "oid": "e3467b7d912a234fb929cdf215dc08efdb011810b44bc21081c4234cc75b370e",
+          "size": 18034640095,
+          "pointerSize": 136
+        },
+        "xetHash": "b73f9469e53febf30945d0b5209308ee677362f4b6c74b39a927b50d5794a203",
+        "path": "split_files/text_encoders/mistral_3_small_flux2_fp8.safetensors"
+      },
+      {
+        "type": "file",
+        "oid": "1fd5b4913b6a9147a73b62f1ffcaf6fdc892a0df",
+        "size": 336213556,
+        "lfs": {
+          "oid": "d64f3a68e1cc4f9f4e29b6e0da38a0204fe9a49f2d4053f0ec1fa1ca02f9c4b5",
+          "size": 336213556,
+          "pointerSize": 134
+        },
+        "xetHash": "bb534d41e8e6f92dc8636b914489b7167aeb950418183ffc10768c573185683a",
+        "path": "split_files/vae/flux2-vae.safetensors"
+      }
+    ]
+  }
+}

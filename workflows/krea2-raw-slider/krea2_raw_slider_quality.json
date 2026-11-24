@@ -1,0 +1,522 @@
+{
+  "last_node_id": 12,
+  "last_link_id": 10,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "UNETLoader",
+      "title": "01 | Krea 2 RAW FP8",
+      "pos": [
+        30,
+        70
+      ],
+      "size": [
+        390,
+        90
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            1
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "UNETLoader",
+        "cnr_id": "comfy-core",
+        "ver": "0.35.0"
+      },
+      "widgets_values": [
+        "krea2_raw_fp8_scaled.safetensors",
+        "default"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "CLIPLoader",
+      "title": "02 | Qwen3-VL 4B FP8",
+      "pos": [
+        30,
+        250
+      ],
+      "size": [
+        390,
+        115
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            2,
+            3
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPLoader",
+        "cnr_id": "comfy-core",
+        "ver": "0.35.0"
+      },
+      "widgets_values": [
+        "qwen3vl_4b_fp8_scaled.safetensors",
+        "krea2",
+        "default"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "VAELoader",
+      "title": "03 | Qwen Image VAE",
+      "pos": [
+        30,
+        450
+      ],
+      "size": [
+        390,
+        70
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            9
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAELoader",
+        "cnr_id": "comfy-core",
+        "ver": "0.35.0"
+      },
+      "widgets_values": [
+        "qwen_image_vae.safetensors"
+      ]
+    },
+    {
+      "id": 5,
+      "type": "LoraLoaderModelOnly",
+      "title": "05 | Breast slider / 0 = off",
+      "pos": [
+        470,
+        230
+      ],
+      "size": [
+        400,
+        110
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 1
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            4
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoraLoaderModelOnly",
+        "cnr_id": "comfy-core",
+        "ver": "0.35.0"
+      },
+      "widgets_values": [
+        "breast_size_v2_krea2_loraholic.safetensors",
+        1.0
+      ]
+    },
+    {
+      "id": 6,
+      "type": "CLIPTextEncode",
+      "title": "06 | Prompt",
+      "pos": [
+        470,
+        460
+      ],
+      "size": [
+        430,
+        220
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 2
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            5
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode",
+        "cnr_id": "comfy-core",
+        "ver": "0.35.0"
+      },
+      "widgets_values": [
+        "Studio fashion photograph of a 30-year-old adult woman, standing naturally, head to knees visible, wearing a fully opaque fitted navy blue crew-neck T-shirt and straight beige trousers. Relaxed arms at her sides. Neutral gray background, soft even daylight, realistic anatomy, natural skin texture, understated clothing catalog photography."
+      ]
+    },
+    {
+      "id": 7,
+      "type": "CLIPTextEncode",
+      "title": "07 | Negative prompt (empty baseline)",
+      "pos": [
+        470,
+        750
+      ],
+      "size": [
+        430,
+        130
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 3
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            6
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode",
+        "cnr_id": "comfy-core",
+        "ver": "0.35.0"
+      },
+      "widgets_values": [
+        ""
+      ]
+    },
+    {
+      "id": 8,
+      "type": "EmptyLatentImage",
+      "title": "08 | Resolution / batch 1",
+      "pos": [
+        30,
+        640
+      ],
+      "size": [
+        390,
+        120
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            7
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "EmptyLatentImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.35.0"
+      },
+      "widgets_values": [
+        1024,
+        1024,
+        1
+      ]
+    },
+    {
+      "id": 9,
+      "type": "KSampler",
+      "title": "09 | 52 steps / CFG 4.5",
+      "pos": [
+        960,
+        80
+      ],
+      "size": [
+        340,
+        320
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 4
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 5
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 6
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            8
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "KSampler",
+        "cnr_id": "comfy-core",
+        "ver": "0.35.0"
+      },
+      "widgets_values": [
+        20260921,
+        "fixed",
+        52,
+        4.5,
+        "euler",
+        "simple",
+        1.0
+      ]
+    },
+    {
+      "id": 10,
+      "type": "VAEDecode",
+      "title": "10 | Decode",
+      "pos": [
+        960,
+        510
+      ],
+      "size": [
+        320,
+        70
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 8
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 9
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            10
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAEDecode",
+        "cnr_id": "comfy-core",
+        "ver": "0.35.0"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 11,
+      "type": "SaveImage",
+      "title": "11 | Save image",
+      "pos": [
+        1370,
+        70
+      ],
+      "size": [
+        520,
+        600
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 10
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.35.0"
+      },
+      "widgets_values": [
+        "krea2-study/krea2_raw_slider_quality"
+      ]
+    },
+    {
+      "id": 12,
+      "type": "Note",
+      "title": "Read me / 学习说明",
+      "pos": [
+        960,
+        690
+      ],
+      "size": [
+        700,
+        250
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "RTX 5080 16GB / 32GB RAM\nChange slider strength in node 05. Start with -1, 0, +1; keep seed fixed.\nNegative = smaller; positive = larger. A slider can also change pose/clothing.\nNo trigger word is required by this slider.\nRAW: 52 steps / ComfyUI CFG 4.5. No Turbo adapter.\nOfficial code CFG 3.5 uses cond + 3.5*(cond-uncond); ComfyUI equivalent is 4.5.\nUses the native ComfyUI Krea sampling shift 1.15; not a bit-exact official-code reproduction.\nAdapted from official image_krea2_turbo_t2i template; see sources/."
+      ]
+    }
+  ],
+  "links": [
+    [
+      1,
+      1,
+      0,
+      5,
+      0,
+      "MODEL"
+    ],
+    [
+      2,
+      2,
+      0,
+      6,
+      0,
+      "CLIP"
+    ],
+    [
+      3,
+      2,
+      0,
+      7,
+      0,
+      "CLIP"
+    ],
+    [
+      4,
+      5,
+      0,
+      9,
+      0,
+      "MODEL"
+    ],
+    [
+      5,
+      6,
+      0,
+      9,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      6,
+      7,
+      0,
+      9,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      7,
+      8,
+      0,
+      9,
+      3,
+      "LATENT"
+    ],
+    [
+      8,
+      9,
+      0,
+      10,
+      0,
+      "LATENT"
+    ],
+    [
+      9,
+      3,
+      0,
+      10,
+      1,
+      "VAE"
+    ],
+    [
+      10,
+      10,
+      0,
+      11,
+      0,
+      "IMAGE"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.7,
+      "offset": [
+        40,
+        30
+      ]
+    },
+    "frontendVersion": "1.51.10"
+  },
+  "version": 0.4
+}

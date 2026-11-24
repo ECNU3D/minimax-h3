@@ -1,0 +1,45 @@
+{
+  "name": "three_white_reference_video",
+  "image_variant": "distilled",
+  "stages": [
+    {
+      "name": "character_front",
+      "prompt_file": "prompts/reference-character-white.txt",
+      "width": 768,
+      "height": 1152,
+      "seed": 20260913,
+      "references": []
+    },
+    {
+      "name": "scene",
+      "prompt_file": "prompts/reference-scene.txt",
+      "width": 1344,
+      "height": 768,
+      "seed": 20260916,
+      "references": []
+    },
+    {
+      "name": "prop",
+      "prompt_file": "prompts/reference-prop-white.txt",
+      "width": 1024,
+      "height": 1024,
+      "seed": 20260917,
+      "references": []
+    }
+  ],
+  "video": {
+    "prompt_file": "prompts/greenhouse-h3-three-white.txt",
+    "references": [
+      "character_front",
+      "scene",
+      "prop"
+    ],
+    "width": 1344,
+    "height": 768,
+    "seconds": 10,
+    "seed": 20260922,
+    "steps": 4,
+    "head_chunks": 4,
+    "ffn_chunks": 8
+  }
+}

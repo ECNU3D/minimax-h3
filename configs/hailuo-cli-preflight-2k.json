@@ -1,0 +1,11 @@
+{
+  "shotId": "h3-cli-preflight-2k-20261005",
+  "settings": { "site": "cn", "mode": "全能参考", "resolution": "2K", "durationSec": 4, "maxCredits": 100 },
+  "prompt": "以图片1锁定奶白色、青绿色关节、琥珀色眼睛的小机器人，以图片2锁定清晨玻璃温室，以图片3锁定珊瑚橙色浇水壶。固定机位，中景，16:9。机器人站在木工作台后，将浇水壶从台面缓慢提起到胸前，朝镜头轻轻歪一下头，然后把浇水壶稳稳放回台面。动作连续自然，保持参考图的机器人外形、温室环境和浇水壶配色。电影感三维动画，清晨暖光。不要文字、字幕、分屏、白色背景、拼贴或多余角色。",
+  "references": [
+    "../runs/luoflow-h3-omni-20261005/01-robot.png",
+    "../runs/luoflow-h3-omni-20261005/02-greenhouse.png",
+    "../runs/luoflow-h3-omni-20261005/03-watering-can.png"
+  ],
+  "outputDir": "../runs/hailuo-cli-preflight-2k-20261005"
+}

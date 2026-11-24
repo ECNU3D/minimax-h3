@@ -1,0 +1,14 @@
+{
+  "repo": "conradlocke/krea2-identity-edit",
+  "revision": "89e9e7a09ee2e5c9331e952063d79b1b8a703280",
+  "files": [
+    {
+      "path": "loras/krea2_identity_edit_v1_2_r64.safetensors",
+      "source_path": "krea2_identity_edit_v1_2_r64.safetensors",
+      "size": 457111048,
+      "sha256": "f794b47142555c929cf536a2f1e4f335174b9aedbb08572b07d45814d4242423"
+    }
+  ],
+  "node_repo": "https://github.com/lbouaraba/comfyui-krea2edit",
+  "node_revision": "86f886dac23013d88996e3a2e99093ba44d322fb"
+}

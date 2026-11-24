@@ -1,0 +1,8 @@
+{
+  "gpu": "NVIDIA GeForce RTX 5080, 16303 MiB, 591.86",
+  "cpu": "AMD Ryzen 7 9800X3D 8-Core Processor",
+  "os": "Windows-11-10.0.26200-SP0",
+  "visible_physical_memory_kib": 32621552,
+  "comfy_commit": "be92396834f9b6e3e361cfe30e7eed693137a448",
+  "launch": "start.ps1 -Cuda13; dynamic VRAM, reserve-vram 2; native PyTorch attention"
+}

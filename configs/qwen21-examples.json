@@ -1,0 +1,47 @@
+{
+  "model": "qwen_image_2.1_int8_convrot.safetensors",
+  "encoder": "qwen3vl_8b_w4a8.safetensors",
+  "vae": "qwen_image_2.1_vae_bf16.safetensors",
+  "steps": 25,
+  "cfg": 1,
+  "sampler": "euler",
+  "scheduler": "simple",
+  "examples": [
+    {
+      "name": "01_portrait",
+      "title": "写实人物：温室研究员",
+      "seed": 2026092101,
+      "width": 1024,
+      "height": 1024,
+      "references": [],
+      "prompt": "写实电影角色设定照，纯白色不透明摄影棚背景，画面中只有一位约28岁的中国女性植物研究员，齐下巴的黑色短发，深棕色眼睛，鼻梁上有少量淡雀斑，自然皮肤纹理，穿芥末黄色防水外套，颈间系一条暗红色棉质围巾。正面半身肖像，腰部以上完整入镜，人物居中，双肩放松，双手自然垂在画面下方，温和而坚定地看向镜头。柔和侧面主光，真实布料褶皱，准确的五官和人体比例，85mm人像摄影质感。画面干净，无文字，无标志，无水印。This is an RGB photograph with an opaque white background."
+    },
+    {
+      "name": "02_chinese_poster",
+      "title": "中文排版：温室来信",
+      "seed": 2026092102,
+      "width": 1024,
+      "height": 1024,
+      "references": [],
+      "prompt": "设计一张精致的正方形中文植物展海报，奶油白纸张背景，墨绿色与暖橙色配色，清晰的平面印刷设计。上半部用非常醒目的深绿色宋体大字准确写出四个汉字：\"温室来信\"。标题下方一行较小但清晰的中文：\"让每一粒种子，都有春天\"。画面中央是一座小巧的复古玻璃温室，里面长着茂盛的蕨类植物和一株开着橙色花朵的植物，细腻水彩与植物学插画风格。底部居中准确印有：\"九月二十一日 · 城市植物馆\"。留白充足，字号层级明确，所有文字完整清晰，没有其他文字，没有水印。背景不透明。"
+    },
+    {
+      "name": "03_transparent_lantern",
+      "title": "原生透明底：黄铜提灯",
+      "seed": 2026092103,
+      "width": 1024,
+      "height": 1024,
+      "references": [],
+      "prompt": "This is an RGBA image with transparency. One antique brass camping lantern, isolated and centered, complete handle and base visible, three-quarter front view. A single curved brass carrying handle above a cylindrical clear glass chamber, weathered golden brass metal housing, an unlit wick inside, precise realistic product photography, fine scratches and subtle patina, soft studio highlights. One object only, no text, no watermark, no floor, no cast shadow, no surrounding objects. The image has alpha channel and the background is transparent."
+    },
+    {
+      "name": "04_portrait_edit",
+      "title": "参考图编辑：换背景与外套颜色",
+      "seed": 2026092104,
+      "width": 1024,
+      "height": 1024,
+      "references": ["01_portrait"],
+      "prompt": "编辑参考图1：保持同一位女性的脸、五官、黑色短发、雀斑、表情、正面半身构图和暗红色围巾。只做两项改变：把芥末黄色外套改成深蓝色，保持原来的款式、拉链和褶皱；把白色背景换成一座真实的玻璃温室内部，身后有柔焦蕨类植物和玻璃窗框，柔和清晨阳光。保持写实电影摄影质感，人物面部清晰，肤色自然。画面没有文字，没有水印。输出不透明的RGB照片。"
+    }
+  ]
+}

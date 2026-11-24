@@ -1,0 +1,821 @@
+{
+  "id": 3131773,
+  "modelId": 2540187,
+  "name": "Krea-2_v2",
+  "nsfwLevel": 60,
+  "createdAt": "2026-07-15T10:33:44.350Z",
+  "updatedAt": "2026-07-15T11:31:19.764Z",
+  "status": "Published",
+  "publishedAt": "2026-07-15T11:31:19.758Z",
+  "trainedWords": [],
+  "trainingStatus": null,
+  "trainingDetails": null,
+  "baseModel": "Krea 2",
+  "baseModelType": "Standard",
+  "description": null,
+  "uploadType": "Created",
+  "usageControl": "Download",
+  "licensingFee": null,
+  "paidAccess": null,
+  "air": "urn:air:krea2:lora:civitai:2540187@3131773",
+  "stats": {
+    "downloadCount": 20024,
+    "thumbsUpCount": 1036
+  },
+  "model": {
+    "name": "Breast Size Slider  - (Krea-2 + ZIT)",
+    "type": "LORA",
+    "nsfw": true,
+    "poi": false
+  },
+  "files": [
+    {
+      "id": 3012392,
+      "sizeKB": 34931.609375,
+      "name": "breast_size_v2_krea2_loraholic.safetensors",
+      "type": "Model",
+      "pickleScanResult": "Success",
+      "pickleScanMessage": null,
+      "virusScanResult": "Success",
+      "virusScanMessage": null,
+      "scannedAt": "2026-07-15T10:34:11.293",
+      "metadata": {
+        "format": "SafeTensor",
+        "fp": "bf16"
+      },
+      "hashes": {
+        "AutoV1": "4022EE07",
+        "AutoV2": "24C2ACD5D3",
+        "SHA256": "24C2ACD5D3BF88920A084984099928C85ED17C985D914B8CEB19A1731AAFD07F",
+        "CRC32": "5E1AF20B",
+        "BLAKE3": "7E5B252B0AB28011A31D0DC0351281AA4E2EF95F4393F1062D04ABEA3E5BA74C",
+        "AutoV3": "CB91BBC0F1BC",
+        "SHA256_12": "24C2ACD5D3BF",
+        "SSHS_12": "6b4c1e1269d1"
+      },
+      "primary": true,
+      "downloadUrl": "https://civitai.com/api/download/models/3131773?fileId=3012392"
+    }
+  ],
+  "images": [
+    {
+      "url": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/c3c7667e-f0c2-4c77-b1c5-731b5b145571/original=true/136772816.jpeg",
+      "nsfwLevel": 8,
+      "width": 2048,
+      "height": 2560,
+      "hash": "U4IXBL~V%3xuBV-;ELNG00M{E1D%00bGIoE1",
+      "type": "image",
+      "metadata": {
+        "hash": "U4IXBL~V%3xuBV-;ELNG00M{E1D%00bGIoE1",
+        "size": 5417327,
+        "width": 2048,
+        "height": 2560
+      },
+      "minor": false,
+      "poi": false,
+      "meta": {
+        "seed": 151154688324193,
+        "Model": "krea2TurboOfficialComfy_krea2TurboInt8",
+        "steps": 8,
+        "width": 1792,
+        "hashes": {
+          "model": "8e4eeda70d",
+          "lora:nsfw_helper_slider_loraholic": "0278852130",
+          "lora:breast_size_v2_krea2_loraholic": "9bfb13481b"
+        },
+        "height": 8,
+        "prompt": "Behind her, a plain cream-colored wall occupies the background, slightly out of focus. The lighting comes from a ceiling fixture above and in front of her, casting a faint shadow downward along the wall. The composition is vertical with the subject centered, the elevated camera angle creating a downward gaze that emphasizes her hips and the sign displayed above her head. The image is a candid photo, likely taken indoors with overhead ambient lighting. A 22-year-old woman stands nude directly towards the camera in a full body framing, her left arm resting down the side while her right hand grips a handwritten cardboard sign reading \"big breasts, small waist\" positioned just above her head. Her dark brown hair falls loose past her shoulders, catching soft diffused light. Her skin tone is warm beige with a matte finish. She looks directly into the camera  with lips slightly parted. The sign is on the top of the image, drawing attention to the contrast between her naked body. ",
+        "sampler": "Euler a bong_tangent",
+        "cfgScale": 1,
+        "resources": [
+          {
+            "hash": "9bfb13481b",
+            "name": "breast_size_v2_krea2_loraholic",
+            "type": "lora",
+            "weight": 6
+          },
+          {
+            "hash": "0278852130",
+            "name": "nsfw_helper_slider_loraholic",
+            "type": "lora",
+            "weight": 2
+          },
+          {
+            "name": "nsfw_helper_slider_loraholic",
+            "type": "lora",
+            "weight": 2
+          },
+          {
+            "name": "breast_size_v2_krea2_loraholic",
+            "type": "lora",
+            "weight": 3
+          },
+          {
+            "name": "nsfw_helper_slider_loraholic",
+            "type": "lora",
+            "weight": 2
+          },
+          {
+            "name": "breast_size_v2_krea2_loraholic",
+            "type": "lora",
+            "weight": 1
+          },
+          {
+            "name": "nsfw_helper_slider_loraholic",
+            "type": "lora",
+            "weight": 2
+          },
+          {
+            "name": "breast_size_v2_krea2_loraholic",
+            "type": "lora",
+            "weight": 3
+          },
+          {
+            "name": "nsfw_helper_slider_loraholic",
+            "type": "lora",
+            "weight": 2
+          },
+          {
+            "name": "breast_size_v2_krea2_loraholic",
+            "type": "lora",
+            "weight": 5
+          },
+          {
+            "name": "nsfw_helper_slider_loraholic",
+            "type": "lora",
+            "weight": 2
+          },
+          {
+            "hash": "8e4eeda70d",
+            "name": "krea2TurboOfficialComfy_krea2TurboInt8",
+            "type": "model"
+          }
+        ],
+        "Model hash": "8e4eeda70d"
+      },
+      "availability": "Public",
+      "hasMeta": true,
+      "hasPositivePrompt": true,
+      "onSite": false,
+      "remixOfId": null
+    },
+    {
+      "url": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/4ea88daf-405a-4145-9151-96dc8ccf31af/original=true/136775258.jpeg",
+      "nsfwLevel": 4,
+      "width": 2048,
+      "height": 2560,
+      "hash": "UGI;u3%gxG%h_Nt8M{R*00RPR*IA00WBkCM{",
+      "type": "image",
+      "metadata": {
+        "hash": "UGI;u3%gxG%h_Nt8M{R*00RPR*IA00WBkCM{",
+        "size": 5673465,
+        "width": 2048,
+        "height": 2560
+      },
+      "minor": false,
+      "poi": false,
+      "meta": {
+        "seed": 151154688324193,
+        "Model": "krea2TurboOfficialComfy_krea2TurboInt8",
+        "width": 1792,
+        "hashes": {
+          "model": "8e4eeda70d",
+          "lora:RLY-thot_shot-KREA2-irena-v1": "842bb4367a",
+          "lora:nsfw_helper_slider_loraholic": "0278852130",
+          "lora:breast_size_v2_krea2_loraholic": "9bfb13481b",
+          "lora:Krea2_TextFusion_Refusal_Reduction": "84ec722dda"
+        },
+        "height": 8,
+        "prompt": "The image is a candid smartphone photograph, likely taken in natural daylight on the open water, with the sensor capturing the scene at a shallow depth of field that renders the distant shoreline as soft texture. The 19 year old woman reclines across the white leather seating of a motorboat, her torso angled three-quarters away from the lens while her face turns directly toward the camera, her body weight shifted onto her right hip with her left arm extended behind her for balance and her right hand resting against her outer thigh. Her hair is long and wavy, falling in loose blonde strands past her shoulders, with individual strands catching the afternoon light and appearing nearly translucent at the edges where sun passes through them. Her skin is smooth and matte, displaying fine pores across her chest and shoulders, with a warm undertone that reflects the golden hour illumination. The bikini top is extremely undersized pink fabric with a wooden ring detail at the center, the triangular cups barely covering the inner portions of her areolas while the outer curves of both breasts remain fully exposed, the fabric pulling taut across the nipples which press visibly against the thin material, the side ties creating slight indentations where they wrap around her ribcage. Her right breast shows its complete outer slope and underside curve, the left breast similarly exposed along its outer edge, both displaying natural shape and the soft pinkish-brown coloration of the areolas at the fabric's edge. The matching bottoms sit low on her hips, equally minimal in coverage, with the waistband creating a slight compression line across her lower abdomen. A delicate gold necklace rests against her collarbones, the small pendant settling just above the sternum. Her expression is open, lips parted slightly in a natural smile, eyes focused directly on the lens with soft crinkles at the outer corners. The foreground is the clean white leather seat texture, the midground her body and the boat's interior surfaces, the background a band of calm water reflecting pale blue sky tones, with a tree-lined shore dissolving into atmospheric haze and small boats anchored near distant docks barely visible as dark shapes. Sunlight arrives from the right side of the frame at approximately sixty degrees above the horizon, casting a soft shadow beneath her left breast and along the left underside of her jawline, the light temperature warm gold with no evidence of cloud diffusion. The camera is positioned at her eye level, the crop framing her from mid-thigh upward, the composition weighted slightly toward the right with negative space over the water occupying the left third, no visible lens distortion, depth of field holding sharp focus on her face and torso while the water and shore dissolve into graduated blur.",
+        "sampler": "Euler a bong_tangent",
+        "cfgScale": 1,
+        "resources": [
+          {
+            "hash": "0278852130",
+            "name": "nsfw_helper_slider_loraholic",
+            "type": "lora",
+            "weight": 1
+          },
+          {
+            "hash": "842bb4367a",
+            "name": "RLY-thot_shot-KREA2-irena-v1",
+            "type": "lora",
+            "weight": 1
+          },
+          {
+            "hash": "84ec722dda",
+            "name": "Krea2_TextFusion_Refusal_Reduction",
+            "type": "lora",
+            "weight": 1
+          },
+          {
+            "hash": "9bfb13481b",
+            "name": "breast_size_v2_krea2_loraholic",
+            "type": "lora",
+            "weight": 8,
+            "unmatched": true
+          },
+          {
+            "name": "nsfw_helper_slider_loraholic",
+            "type": "lora",
+            "weight": 1
+          },
+          {
+            "name": "RLY-thot_shot-KREA2-irena-v1",
+            "type": "lora",
+            "weight": 1
+          },
+          {
+            "name": "Krea2_TextFusion_Refusal_Reduction",
+            "type": "lora",
+            "weight": 1
+          },
+          {
+            "name": "RLY-thot_shot-KREA2-irena-v1",
+            "type": "lora",
+            "weight": 1
+          },
+          {
+            "name": "breast_size_v2_krea2_loraholic",
+            "type": "lora",
+            "weight": 5
+          },
+          {
+            "name": "RLY-thot_shot-KREA2-irena-v1",
+            "type": "lora",
+            "weight": 1
+          },
+          {
+            "hash": "8e4eeda70d",
+            "name": "krea2TurboOfficialComfy_krea2TurboInt8",
+            "type": "model"
+          }
+        ],
+        "Model hash": "8e4eeda70d"
+      },
+      "availability": "Public",
+      "hasMeta": true,
+      "hasPositivePrompt": true,
+      "onSite": false,
+      "remixOfId": null
+    },
+    {
+      "url": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/37caa7e2-9064-4570-8e08-25df964dc1d7/original=true/136775333.jpeg",
+      "nsfwLevel": 8,
+      "width": 2048,
+      "height": 2560,
+      "hash": "U2DuiA0M0$~C01~V9Z4:Vf^+E04:4p?HM{4.",
+      "type": "image",
+      "metadata": {
+        "hash": "U2DuiA0M0$~C01~V9Z4:Vf^+E04:4p?HM{4.",
+        "size": 5993494,
+        "width": 2048,
+        "height": 2560
+      },
+      "minor": false,
+      "poi": false,
+      "meta": {
+        "seed": 151154688324193,
+        "Model": "krea2TurboOfficialComfy_krea2TurboInt8",
+        "width": 600,
+        "hashes": {
+          "model": "8e4eeda70d",
+          "lora:breast_size_krea2_loraholic": "25bcf9d16e",
+          "lora:nsfw_helper_slider_loraholic": "0278852130",
+          "lora:breast_size_v2_krea2_loraholic": "9bfb13481b"
+        },
+        "height": 8,
+        "prompt": "A photograph of a woman lying naked on a rumpled grey couch in afternoon light with her legs draped over the armrest and her skin is lit up by the sun.  exposed.",
+        "sampler": "Euler a bong_tangent",
+        "cfgScale": 1,
+        "resources": [
+          {
+            "hash": "25bcf9d16e",
+            "name": "breast_size_krea2_loraholic",
+            "type": "lora",
+            "weight": 5
+          },
+          {
+            "hash": "0278852130",
+            "name": "nsfw_helper_slider_loraholic",
+            "type": "lora",
+            "weight": 2
+          },
+          {
+            "name": "nsfw_helper_slider_loraholic",
+            "type": "lora",
+            "weight": 2
+          },
+          {
+            "hash": "9bfb13481b",
+            "name": "breast_size_v2_krea2_loraholic",
+            "type": "lora",
+            "weight": 5
+          },
+          {
+            "name": "nsfw_helper_slider_loraholic",
+            "type": "lora",
+            "weight": 2
+          },
+          {
+            "name": "nsfw_helper_slider_loraholic",
+            "type": "lora",
+            "weight": 2
+          },
+          {
+            "name": "breast_size_v2_krea2_loraholic",
+            "type": "lora",
+            "weight": 5
+          },
+          {
+            "name": "nsfw_helper_slider_loraholic",
+            "type": "lora",
+            "weight": 2
+          },
+          {
+            "name": "breast_size_krea2_loraholic",
+            "type": "lora",
+            "weight": 5
+          },
+          {
+            "name": "nsfw_helper_slider_loraholic",
+            "type": "lora",
+            "weight": 2
+          },
+          {
+            "hash": "8e4eeda70d",
+            "name": "krea2TurboOfficialComfy_krea2TurboInt8",
+            "type": "model"
+          }
+        ],
+        "Model hash": "8e4eeda70d"
+      },
+      "availability": "Public",
+      "hasMeta": true,
+      "hasPositivePrompt": true,
+      "onSite": false,
+      "remixOfId": null
+    },
+    {
+      "url": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/b04e507e-81d4-4907-93d0-7341035c78be/original=true/136775263.jpeg",
+      "nsfwLevel": 4,
+      "width": 2048,
+      "height": 2560,
+      "hash": "UBI}Fo%LRPNH.TRkM{IA00%MX8?b00NGkD9G",
+      "type": "image",
+      "metadata": {
+        "hash": "UBI}Fo%LRPNH.TRkM{IA00%MX8?b00NGkD9G",
+        "size": 5700549,
+        "width": 2048,
+        "height": 2560
+      },
+      "minor": false,
+      "poi": false,
+      "meta": {
+        "seed": 151154688324193,
+        "Model": "krea2TurboOfficialComfy_krea2TurboInt8",
+        "width": 1792,
+        "hashes": {
+          "model": "8e4eeda70d",
+          "lora:RLY-thot_shot-KREA2-irena-v1": "842bb4367a",
+          "lora:breast_size_v2_krea2_loraholic": "9bfb13481b",
+          "lora:Krea2_TextFusion_Refusal_Reduction": "84ec722dda"
+        },
+        "height": 8,
+        "prompt": "The image is a candid smartphone photograph, likely taken in natural daylight on the open water, with the sensor capturing the scene at a shallow depth of field that renders the distant shoreline as soft texture. The 19 year old woman reclines across the white leather seating of a motorboat, her torso angled three-quarters away from the lens while her face turns directly toward the camera, her body weight shifted onto her right hip with her left arm extended behind her for balance and her right hand pulling the fabric of her bikini top down to expose her left breast completely. Her hair is long and wavy, falling in loose blonde strands past her shoulders, with individual strands catching the afternoon light and appearing nearly translucent at the edges where sun passes through them. Her skin is smooth and matte, displaying fine pores across her chest and shoulders, with a warm undertone that reflects the golden hour illumination. The exposed breast shows natural shape and contour, the areola a soft pinkish-brown, the nipple centered and erect. The bikini top is pink fabric with a wooden ring detail at the center, the right side still in place while the left side is pulled aside by her fingers, the matching bottoms sitting low on her hips with the waistband creating a slight compression line across her lower abdomen. A delicate gold necklace rests against her collarbones, the small pendant settling just above the sternum. Her expression is open, lips parted slightly in a natural smile, eyes focused directly on the lens with soft crinkles at the outer corners. The foreground is the clean white leather seat texture, the midground her body and the boat's interior surfaces, the background a band of calm water reflecting pale blue sky tones, with a tree-lined shore dissolving into atmospheric haze and small boats anchored near distant docks barely visible as dark shapes. Sunlight arrives from the right side at approximately sixty degrees above the horizon, casting a soft shadow beneath her left breast and along the underside of her jawline, the light temperature warm gold with no evidence of cloud diffusion. The camera is positioned at her eye level, the crop framing her from mid-thigh upward, the composition weighted slightly left with negative space over the water occupying the right third, no visible lens distortion, depth of field holding sharp focus on her face and torso while the water and shore dissolve into graduated blur.",
+        "sampler": "Euler a bong_tangent",
+        "cfgScale": 1,
+        "resources": [
+          {
+            "hash": "842bb4367a",
+            "name": "RLY-thot_shot-KREA2-irena-v1",
+            "type": "lora",
+            "weight": 1
+          },
+          {
+            "hash": "84ec722dda",
+            "name": "Krea2_TextFusion_Refusal_Reduction",
+            "type": "lora",
+            "weight": 1
+          },
+          {
+            "hash": "9bfb13481b",
+            "name": "breast_size_v2_krea2_loraholic",
+            "type": "lora",
+            "weight": 6
+          },
+          {
+            "name": "RLY-thot_shot-KREA2-irena-v1",
+            "type": "lora",
+            "weight": 1
+          },
+          {
+            "name": "Krea2_TextFusion_Refusal_Reduction",
+            "type": "lora",
+            "weight": 1
+          },
+          {
+            "name": "RLY-thot_shot-KREA2-irena-v1",
+            "type": "lora",
+            "weight": 1
+          },
+          {
+            "name": "breast_size_v2_krea2_loraholic",
+            "type": "lora",
+            "weight": 5
+          },
+          {
+            "name": "RLY-thot_shot-KREA2-irena-v1",
+            "type": "lora",
+            "weight": 1
+          },
+          {
+            "hash": "8e4eeda70d",
+            "name": "krea2TurboOfficialComfy_krea2TurboInt8",
+            "type": "model"
+          }
+        ],
+        "Model hash": "8e4eeda70d"
+      },
+      "availability": "Public",
+      "hasMeta": true,
+      "hasPositivePrompt": true,
+      "onSite": false,
+      "remixOfId": null
+    },
+    {
+      "url": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/34547928-f0a8-452b-9fa2-7df9898b33a6/original=true/136775280.jpeg",
+      "nsfwLevel": 8,
+      "width": 2048,
+      "height": 2560,
+      "hash": "U2DuJQ~W?H$eIr-;0eIU02W?9a0fDitRI:9t",
+      "type": "image",
+      "metadata": {
+        "hash": "U2DuJQ~W?H$eIr-;0eIU02W?9a0fDitRI:9t",
+        "size": 5518655,
+        "width": 2048,
+        "height": 2560
+      },
+      "minor": false,
+      "poi": false,
+      "meta": {
+        "seed": 151154688324193,
+        "Model": "krea2TurboOfficialComfy_krea2TurboInt8",
+        "steps": 8,
+        "width": 1792,
+        "hashes": {
+          "model": "8e4eeda70d",
+          "lora:breast_size_krea2_loraholic": "25bcf9d16e",
+          "lora:nsfw_helper_slider_loraholic": "0278852130",
+          "lora:breast_size_v2_krea2_loraholic": "9bfb13481b"
+        },
+        "height": 8,
+        "prompt": "The image is a digital photograph, likely captured with a full-frame mirrorless camera in natural window light during late afternoon. A 19-year-old woman stands facing the camera in the center of a narrow brick-walled corridor, weight shifted onto her left leg, right knee bent slightly forward, spine arched to push her hips toward the lens. Auburn hair falls in loose waves past her collarbones, catching warm amber light along the strands. Pale skin with matte texture covers shoulders, chest, torso, hips, and thighs; her large breasts hang naturally with small nipples visible in direct illumination. Her right hand rests against the brick wall beside her hip, left arm hangs relaxed at her side, fingers slightly curled. She holds eye contact with the lens, mouth closed with lips pressed together. Exposed brick stretches into soft blur behind her shoulders; weathered wooden floorboards extend from her bare feet into the foreground in sharp detail. A tall window outside the left frame edge sends a broad shaft of golden light across her body from the side, casting her right profile into shadow that darkens the brick wall beyond. The camera is positioned at chest height two meters away, framing her from mid-thigh upward with shallow depth of field, her figure centered against symmetrical architecture.",
+        "sampler": "Euler a bong_tangent",
+        "cfgScale": 1,
+        "resources": [
+          {
+            "hash": "25bcf9d16e",
+            "name": "breast_size_krea2_loraholic",
+            "type": "lora",
+            "weight": 7
+          },
+          {
+            "hash": "0278852130",
+            "name": "nsfw_helper_slider_loraholic",
+            "type": "lora",
+            "weight": 2
+          },
+          {
+            "name": "nsfw_helper_slider_loraholic",
+            "type": "lora",
+            "weight": 2
+          },
+          {
+            "hash": "9bfb13481b",
+            "name": "breast_size_v2_krea2_loraholic",
+            "type": "lora",
+            "weight": 7
+          },
+          {
+            "name": "nsfw_helper_slider_loraholic",
+            "type": "lora",
+            "weight": 2
+          },
+          {
+            "name": "nsfw_helper_slider_loraholic",
+            "type": "lora",
+            "weight": 2
+          },
+          {
+            "name": "breast_size_v2_krea2_loraholic",
+            "type": "lora",
+            "weight": 5
+          },
+          {
+            "name": "nsfw_helper_slider_loraholic",
+            "type": "lora",
+            "weight": 2
+          },
+          {
+            "name": "breast_size_krea2_loraholic",
+            "type": "lora",
+            "weight": 5
+          },
+          {
+            "name": "nsfw_helper_slider_loraholic",
+            "type": "lora",
+            "weight": 2
+          },
+          {
+            "hash": "8e4eeda70d",
+            "name": "krea2TurboOfficialComfy_krea2TurboInt8",
+            "type": "model"
+          }
+        ],
+        "Model hash": "8e4eeda70d"
+      },
+      "availability": "Public",
+      "hasMeta": true,
+      "hasPositivePrompt": true,
+      "onSite": false,
+      "remixOfId": null
+    },
+    {
+      "url": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/3b63cd34-60a8-4f1d-8274-70646f2c6505/original=true/136775344.jpeg",
+      "nsfwLevel": 4,
+      "width": 2048,
+      "height": 2560,
+      "hash": "UFI}Ci%Mxuxuyst7X8of00R+WVIo00ocRPRP",
+      "type": "image",
+      "metadata": {
+        "hash": "UFI}Ci%Mxuxuyst7X8of00R+WVIo00ocRPRP",
+        "size": 5401336,
+        "width": 2048,
+        "height": 2560,
+        "nsfwLevelReason": "Knights Vote"
+      },
+      "minor": false,
+      "poi": false,
+      "meta": {
+        "seed": 151154688324193,
+        "Model": "krea2TurboOfficialComfy_krea2TurboInt8",
+        "width": 1792,
+        "hashes": {
+          "model": "8e4eeda70d",
+          "lora:breast_size_krea2_loraholic": "25bcf9d16e",
+          "lora:nsfw_helper_slider_loraholic": "0278852130",
+          "lora:breast_size_v2_krea2_loraholic": "9bfb13481b"
+        },
+        "height": 8,
+        "prompt": "The image is a medium close-up photograph taken on a motorboat in late afternoon light, likely captured with a smartphone or digital camera. The 22 year old woman reclines on white leather seating, her body centered in the frame as her head turns rightward, gaze meeting something beyond the lens while her lips part softly. Long wavy blonde hair spills across her shoulders, catching warm golden highlights where the sun strikes each strand. Her skin holds a smooth matte finish, with soft shadows defining her collarbone and the curve along her ribs. She wears a pink bandeau bikini top with a wooden ring at the center and matching bottoms, the fabric stretched over her curves; a thin gold necklace with a small pendant rests at her throat. Both arms drape along the boat's edge, and her legs part slightly, weight shifted onto one hip in a quiet invitation. The foreground holds the white leather in sharp focus; the midground dissolves into calm water reflecting pale blue sky; the background blurs into distant tree-lined shores and anchored boats near docks on the horizon. Warm directional sunlight streams from the left, casting gentle shadows along the right side of her torso and illuminating her skin with golden tones. The camera sits at eye level, framing her intimately against the expansive water, with shallow depth of field isolating her from the background and minimal negative space at the frame edges.",
+        "sampler": "Euler a bong_tangent",
+        "cfgScale": 1,
+        "resources": [
+          {
+            "hash": "25bcf9d16e",
+            "name": "breast_size_krea2_loraholic",
+            "type": "lora",
+            "weight": 7
+          },
+          {
+            "hash": "0278852130",
+            "name": "nsfw_helper_slider_loraholic",
+            "type": "lora",
+            "weight": 2
+          },
+          {
+            "name": "nsfw_helper_slider_loraholic",
+            "type": "lora",
+            "weight": 2
+          },
+          {
+            "hash": "9bfb13481b",
+            "name": "breast_size_v2_krea2_loraholic",
+            "type": "lora",
+            "weight": 10
+          },
+          {
+            "name": "nsfw_helper_slider_loraholic",
+            "type": "lora",
+            "weight": 2
+          },
+          {
+            "name": "nsfw_helper_slider_loraholic",
+            "type": "lora",
+            "weight": 2
+          },
+          {
+            "name": "breast_size_v2_krea2_loraholic",
+            "type": "lora",
+            "weight": 5
+          },
+          {
+            "name": "nsfw_helper_slider_loraholic",
+            "type": "lora",
+            "weight": 2
+          },
+          {
+            "name": "breast_size_krea2_loraholic",
+            "type": "lora",
+            "weight": 5
+          },
+          {
+            "name": "nsfw_helper_slider_loraholic",
+            "type": "lora",
+            "weight": 2
+          },
+          {
+            "hash": "8e4eeda70d",
+            "name": "krea2TurboOfficialComfy_krea2TurboInt8",
+            "type": "model"
+          }
+        ],
+        "Model hash": "8e4eeda70d"
+      },
+      "availability": "Public",
+      "hasMeta": true,
+      "hasPositivePrompt": true,
+      "onSite": false,
+      "remixOfId": null
+    },
+    {
+      "url": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/f0124012-09eb-4a74-9845-4b2cd45dc3da/original=true/136775315.jpeg",
+      "nsfwLevel": 8,
+      "width": 2048,
+      "height": 2560,
+      "hash": "U5G%}c~V-V~A00I;EL4:7$o}EL9]#9-oIoxY",
+      "type": "image",
+      "metadata": {
+        "hash": "U5G%}c~V-V~A00I;EL4:7$o}EL9]#9-oIoxY",
+        "size": 5379275,
+        "width": 2048,
+        "height": 2560
+      },
+      "minor": false,
+      "poi": false,
+      "meta": {
+        "seed": 151154688324193,
+        "Model": "krea2TurboOfficialComfy_krea2TurboInt8",
+        "width": 1792,
+        "hashes": {
+          "model": "8e4eeda70d",
+          "lora:krea2_nud3": "8217d7ab56",
+          "lora:breast_size_krea2_loraholic": "25bcf9d16e",
+          "lora:nsfw_helper_slider_loraholic": "0278852130",
+          "lora:breast_size_v2_krea2_loraholic": "9bfb13481b"
+        },
+        "height": 8,
+        "prompt": "The image is a candid indoor photograph, likely taken in warm incandescent light from a bedside lamp positioned low and to the left. The 22 year old woman stands naked beside an unmade bed, legs parted shoulder-width, her left hand open and pressed flat against her left large breast with fingers spread wide, her right arm hanging loose at her thigh. Her body is lean with a flat stomach, narrow hips, and a completely shaved pubis, her right large breast pointing slightly outward from the pressure of her left hand, firm buttocks catching a soft shadow along their curve. A black virtual reality headset covers the upper half of her face, her mouth parted mid-breath. In the soft blur of the background, another woman sits cross-legged on the floor, her face sharp enough to read an expression of amused understanding, eyes fixed forward. The light creates a warm gradient across the standing woman's torso and thighs, leaving her lower legs and the seated figure in gentle shadow. The camera is positioned at mid-thigh height, slightly below eye level, framing the standing woman off-center with generous negative space to her right where the seated figure occupies the background plane.",
+        "sampler": "Euler a bong_tangent",
+        "cfgScale": 1,
+        "resources": [
+          {
+            "hash": "9bfb13481b",
+            "name": "breast_size_v2_krea2_loraholic",
+            "type": "lora",
+            "weight": 5
+          },
+          {
+            "hash": "8217d7ab56",
+            "name": "krea2_nud3",
+            "type": "lora",
+            "weight": 1
+          },
+          {
+            "name": "krea2_nud3",
+            "type": "lora",
+            "weight": 1
+          },
+          {
+            "name": "krea2_nud3",
+            "type": "lora",
+            "weight": 1
+          },
+          {
+            "hash": "0278852130",
+            "name": "nsfw_helper_slider_loraholic",
+            "type": "lora",
+            "weight": 2
+          },
+          {
+            "name": "breast_size_v2_krea2_loraholic",
+            "type": "lora",
+            "weight": 5
+          },
+          {
+            "name": "nsfw_helper_slider_loraholic",
+            "type": "lora",
+            "weight": 2
+          },
+          {
+            "hash": "25bcf9d16e",
+            "name": "breast_size_krea2_loraholic",
+            "type": "lora",
+            "weight": 5
+          },
+          {
+            "name": "nsfw_helper_slider_loraholic",
+            "type": "lora",
+            "weight": 2
+          },
+          {
+            "hash": "8e4eeda70d",
+            "name": "krea2TurboOfficialComfy_krea2TurboInt8",
+            "type": "model"
+          }
+        ],
+        "Model hash": "8e4eeda70d"
+      },
+      "availability": "Public",
+      "hasMeta": true,
+      "hasPositivePrompt": true,
+      "onSite": false,
+      "remixOfId": null
+    },
+    {
+      "url": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/0c1354af-1188-4e17-ad21-51c99ac0f16d/original=true/136780750.jpeg",
+      "nsfwLevel": 8,
+      "width": 2048,
+      "height": 2560,
+      "hash": "U1H-Ps=E^QrW00%z0K0100~q9[k;00_3JPEL",
+      "type": "image",
+      "metadata": {
+        "hash": "U1H-Ps=E^QrW00%z0K0100~q9[k;00_3JPEL",
+        "size": 5678766,
+        "width": 2048,
+        "height": 2560
+      },
+      "minor": false,
+      "poi": false,
+      "meta": {
+        "seed": 151154688324193,
+        "Model": "krea2TurboOfficialComfy_krea2TurboInt8",
+        "width": 1792,
+        "hashes": {
+          "model": "8e4eeda70d",
+          "lora:breast_size_krea2_loraholic": "25bcf9d16e",
+          "lora:nsfw_helper_slider_loraholic": "0278852130",
+          "lora:breast_size_v2_krea2_loraholic": "9bfb13481b"
+        },
+        "height": 8,
+        "prompt": ",,Behind her, a plain cream-colored wall occupies the background, slightly out of focus. The lighting comes from a ceiling fixture above and in front of her, casting a faint shadow downward along the wall. The composition is vertical with the subject centered, the elevated camera angle creating a downward gaze that emphasizes her hips and the sign displayed above her head. The image is a candid photo, likely taken indoors with overhead ambient lighting. A 22-year-old woman stands nude directly towards the camera in a full body framing, her left arm resting down the side while her right hand grips a handwritten cardboard sign reading \"Combine V1 & V2 for hyper size\" positioned just above her head. Her dark brown hair falls loose past her shoulders, catching soft diffused light. Her skin tone is warm beige with a matte finish. She looks directly into the camera  with lips slightly parted. The sign is on the top of the image, drawing attention to the contrast between her naked body. ",
+        "sampler": "Euler a bong_tangent",
+        "cfgScale": 1,
+        "resources": [
+          {
+            "hash": "9bfb13481b",
+            "name": "breast_size_v2_krea2_loraholic",
+            "type": "lora",
+            "weight": 8,
+            "unmatched": true
+          },
+          {
+            "hash": "0278852130",
+            "name": "nsfw_helper_slider_loraholic",
+            "type": "lora",
+            "weight": 1
+          },
+          {
+            "hash": "25bcf9d16e",
+            "name": "breast_size_krea2_loraholic",
+            "type": "lora",
+            "weight": 6
+          },
+          {
+            "name": "nsfw_helper_slider_loraholic",
+            "type": "lora",
+            "weight": 1
+          },
+          {
+            "name": "breast_size_v2_krea2_loraholic",
+            "type": "lora",
+            "weight": 6
+          },
+          {
+            "name": "breast_size_krea2_loraholic",
+            "type": "lora",
+            "weight": 4
+          },
+          {
+            "name": "nsfw_helper_slider_loraholic",
+            "type": "lora",
+            "weight": 1
+          },
+          {
+            "hash": "8e4eeda70d",
+            "name": "krea2TurboOfficialComfy_krea2TurboInt8",
+            "type": "model"
+          }
+        ],
+        "Model hash": "8e4eeda70d"
+      },
+      "availability": "Public",
+      "hasMeta": true,
+      "hasPositivePrompt": true,
+      "onSite": false,
+      "remixOfId": null
+    }
+  ],
+  "downloadUrl": "https://civitai.com/api/download/models/3131773"
+}

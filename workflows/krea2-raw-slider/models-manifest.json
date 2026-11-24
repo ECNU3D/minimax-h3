@@ -1,0 +1,56 @@
+[
+  {
+    "provider": "huggingface",
+    "repo": "Comfy-Org/Krea-2",
+    "revision": "e5ea8b4dd7f38f348b138eb0fe29f92c0e367e96",
+    "source_path": "diffusion_models/krea2_raw_fp8_scaled.safetensors",
+    "path": "diffusion_models/krea2_raw_fp8_scaled.safetensors",
+    "size": 13141730784,
+    "sha256": "48cd5d6c100297968349b41a8e77c6591d1dac18a215807f5f25f59e5c54cd61"
+  },
+  {
+    "provider": "huggingface",
+    "repo": "Comfy-Org/Krea-2",
+    "revision": "e5ea8b4dd7f38f348b138eb0fe29f92c0e367e96",
+    "source_path": "loras/krea2_turbo_lora_rank_64_bf16.safetensors",
+    "path": "loras/krea2_turbo_lora_rank_64_bf16.safetensors",
+    "size": 469423778,
+    "sha256": "db8c5bae0a415d448da9d842111d6e51f7d32e47143a3118eb267e5c4773de87"
+  },
+  {
+    "provider": "huggingface",
+    "repo": "Comfy-Org/Krea-2",
+    "revision": "e5ea8b4dd7f38f348b138eb0fe29f92c0e367e96",
+    "source_path": "text_encoders/qwen3vl_4b_fp8_scaled.safetensors",
+    "path": "text_encoders/qwen3vl_4b_fp8_scaled.safetensors",
+    "size": 5242467968,
+    "sha256": "54bd5144df0bbc25dd6ccadfcb826b521445a1b06ae5a42570bdd2974ca87094"
+  },
+  {
+    "provider": "huggingface",
+    "repo": "Comfy-Org/Krea-2",
+    "revision": "e5ea8b4dd7f38f348b138eb0fe29f92c0e367e96",
+    "source_path": "vae/qwen_image_vae.safetensors",
+    "path": "vae/qwen_image_vae.safetensors",
+    "size": 253806246,
+    "sha256": "a70580f0213e67967ee9c95f05bb400e8fb08307e017a924bf3441223e023d1f"
+  },
+  {
+    "provider": "civitai",
+    "model_id": 2540187,
+    "version_id": 3131773,
+    "file_id": 3012392,
+    "url": "https://civitai.com/api/download/models/3131773?fileId=3012392",
+    "path": "loras/breast_size_v2_krea2_loraholic.safetensors",
+    "size": 35769968,
+    "sha256": "24c2acd5d3bf88920a084984099928c85ed17c985d914b8ceb19a1731aafd07f",
+    "verified_mirror": {
+      "repo": "Sentinel7/krea2",
+      "revision": "6fd28a000e144e827b20ea59b1a4f54bfc3d5ba3",
+      "source_path": "2540187/3131773/breast_size_v2_krea2_loraholic.safetensors",
+      "path": "loras/breast_size_v2_krea2_loraholic.safetensors",
+      "size": 35769968,
+      "sha256": "24c2acd5d3bf88920a084984099928c85ed17c985d914b8ceb19a1731aafd07f"
+    }
+  }
+]

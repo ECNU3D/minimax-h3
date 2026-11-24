@@ -1,0 +1,66 @@
+{
+  "repo": "ACE-Step/acestep-v15-sft",
+  "revision": "c410d249e71ea9385a7b586865e65b1473e1098d",
+  "files": [
+    {
+      "type": "file",
+      "oid": "a6344aac8c09253b3b630fb776ae94478aa0275b",
+      "size": 1519,
+      "path": ".gitattributes"
+    },
+    {
+      "type": "file",
+      "oid": "09b1e911e95bb4543e08bfa19ad93bf53e2bc05f",
+      "size": 5498,
+      "path": "README.md"
+    },
+    {
+      "type": "file",
+      "oid": "0448a3436bb42b0a667a4090087dd688e65229fb",
+      "size": 7956,
+      "path": "apg_guidance.py"
+    },
+    {
+      "type": "file",
+      "oid": "ba68842e7207fe015ef7bca698e40f12dc13241d",
+      "size": 1940,
+      "path": "config.json"
+    },
+    {
+      "type": "file",
+      "oid": "965a1b73afb1c89d0959c7d80691e487fdfde505",
+      "size": 13130,
+      "path": "configuration_acestep_v15.py"
+    },
+    {
+      "type": "file",
+      "oid": "5847a8724ccfdd2163a92c7abfcbd1e19d097e99",
+      "size": 4787825604,
+      "lfs": {
+        "oid": "d4dd3a93870f06720027965b90771f529ab02094b3d29e2518f1d5e097e1af7e",
+        "size": 4787825604,
+        "pointerSize": 135
+      },
+      "xetHash": "dc9cedbc5b0c55559e71047de50bd80060d39f30d7e8af7df00bdb275ab5867e",
+      "path": "model.safetensors"
+    },
+    {
+      "type": "file",
+      "oid": "3be5113ad1a9bce551c456b8d54073b6c96faac9",
+      "size": 95910,
+      "path": "modeling_acestep_v15_base.py"
+    },
+    {
+      "type": "file",
+      "oid": "6b1e0f254e47f4f23ec505313d05e1d9fd09ae3e",
+      "size": 3841215,
+      "lfs": {
+        "oid": "a778e9dd942f5e8b2c09c55370782d318834432b03dabbcdf70e6ed49ad6358b",
+        "size": 3841215,
+        "pointerSize": 132
+      },
+      "xetHash": "8a2ef60fef2b175d83e420a0eb76c696dcb428494347ecb5ca5866cb4bab09f4",
+      "path": "silence_latent.pt"
+    }
+  ]
+}

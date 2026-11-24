@@ -1,0 +1,138 @@
+{
+  "repo": "OpenMOSS-Team/MOSS-SoundEffect-v2.0",
+  "revision": "e35df4d82fbe87fcd5d14e5d100e349c0c3c076d",
+  "files": [
+    {
+      "type": "file",
+      "oid": "f1ca65ce6a5b0774360fde1ec05157d9f937aaa2",
+      "size": 1580,
+      "path": ".gitattributes"
+    },
+    {
+      "type": "file",
+      "oid": "8202a394458cec5b058b976c12e84a2a9cf3915e",
+      "size": 3825,
+      "path": "README.md"
+    },
+    {
+      "type": "file",
+      "oid": "936d7fb5d4e492b6ac64bcce94c33fbfd3a56978",
+      "size": 504,
+      "path": "model_index.json"
+    },
+    {
+      "type": "file",
+      "oid": "63d930b308ad1b05dd71b91a747d7f87ff903a11",
+      "size": 134,
+      "path": "scheduler/scheduler_config.json"
+    },
+    {
+      "type": "file",
+      "oid": "044a86ecf7cb32238f3fae4184e55d354787edec",
+      "size": 726,
+      "path": "text_encoder/config.json"
+    },
+    {
+      "type": "file",
+      "oid": "20a8a9156fc8c3f25295ca067f61fdf120d517c5",
+      "size": 239,
+      "path": "text_encoder/generation_config.json"
+    },
+    {
+      "type": "file",
+      "oid": "1414f1bda72e17b63551d847c05c68e3396ba717",
+      "size": 3441185608,
+      "lfs": {
+        "oid": "169ad53ec313c3a34b06c0809216e4fc072cce444a5d4ff2b59690d064130ed5",
+        "size": 3441185608,
+        "pointerSize": 135
+      },
+      "xetHash": "01254e27636aee78c23016dde2b744940e1f04c6a8953801d6fd03093195afb7",
+      "path": "text_encoder/model-00001-of-00002.safetensors"
+    },
+    {
+      "type": "file",
+      "oid": "4aab3b30a4b8c6c1d0437a2576e0bea08507f12c",
+      "size": 622329984,
+      "lfs": {
+        "oid": "912becff8d60672aa8628ef08c05898d9adf17c2ad4ae3caf99b065622fdeff9",
+        "size": 622329984,
+        "pointerSize": 134
+      },
+      "xetHash": "a9317ae4c70ee4708a9f24aae8654d6caa62afe9e57c0441dc903cced8e01704",
+      "path": "text_encoder/model-00002-of-00002.safetensors"
+    },
+    {
+      "type": "file",
+      "oid": "986d7db875b47d21f68530f6baac038f1b297b39",
+      "size": 25605,
+      "path": "text_encoder/model.safetensors.index.json"
+    },
+    {
+      "type": "file",
+      "oid": "31349551d90c7606f325fe0f11bbb8bd5fa0d7c7",
+      "size": 1671853,
+      "path": "tokenizer/merges.txt"
+    },
+    {
+      "type": "file",
+      "oid": "cd71f61a15a522601badb3dc960d800d9cb3766c",
+      "size": 11422654,
+      "lfs": {
+        "oid": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+        "size": 11422654,
+        "pointerSize": 133
+      },
+      "xetHash": "693ec4b3922b0bd306bf7b4989e115ffbfeb7b0c08b31bc6d956818c6bb07f61",
+      "path": "tokenizer/tokenizer.json"
+    },
+    {
+      "type": "file",
+      "oid": "417d038a63fa3de29cfde265caedae14d1a58d92",
+      "size": 9732,
+      "path": "tokenizer/tokenizer_config.json"
+    },
+    {
+      "type": "file",
+      "oid": "4783fe10ac3adce15ac8f358ef5462739852c569",
+      "size": 2776833,
+      "path": "tokenizer/vocab.json"
+    },
+    {
+      "type": "file",
+      "oid": "8828d73f1202f94ef006db4655a6340659147f6e",
+      "size": 311,
+      "path": "transformer/config.json"
+    },
+    {
+      "type": "file",
+      "oid": "fce7c67c0d5e47673f78dcf46bfeb9a787c433b0",
+      "size": 5664274560,
+      "lfs": {
+        "oid": "bda86e4d6730ff47cea47851d219880191e9d21d4d264b21a6ffe7cb2db9dfb0",
+        "size": 5664274560,
+        "pointerSize": 135
+      },
+      "xetHash": "9fbbc93da2c0760f8db7550f86501b404fddee86341fa4f88da4dffb4dc81390",
+      "path": "transformer/diffusion_pytorch_model.safetensors"
+    },
+    {
+      "type": "file",
+      "oid": "cb812e0f17f290b47131f3c6fb49d3e7af57d636",
+      "size": 169,
+      "path": "vae/config.json"
+    },
+    {
+      "type": "file",
+      "oid": "0ac1b5dbe87a8ac785b9dfd248d5bed12fe4564d",
+      "size": 1486465965,
+      "lfs": {
+        "oid": "07e6139ff33bd21ba8a7a7f40ed24aab13ac0d100cd686f8a9f3e03dc5251cb1",
+        "size": 1486465965,
+        "pointerSize": 135
+      },
+      "xetHash": "b03dff703703dd9ad81ddc991de24f7a039e7015ae94aca4b9a1aecc70a20dfb",
+      "path": "vae/vae_128d_48k.pth"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "source": "https://github.com/Comfy-Org/workflow_templates/blob/main/templates/image_krea2_turbo_t2i.json",
+  "installed_package": "comfyui-workflow-templates 0.11.57",
+  "sha256": "d04b37d8345b1bf6aa247ef182a4454e0221730cf353379af27b20e932e9f11f",
+  "adaptations": [
+    "flat core nodes",
+    "RAW FP8 base",
+    "Loraholic Krea2 v2 slider",
+    "separate RAW / distilled presets",
+    "direct text entry",
+    "fixed seed"
+  ]
+}

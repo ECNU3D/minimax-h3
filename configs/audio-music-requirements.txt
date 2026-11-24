@@ -1,0 +1,17 @@
+# Inference-only Windows environment. Torch stack is installed separately.
+transformers==4.57.3
+diffusers==0.37.1
+numpy==1.26.4
+gradio==6.2.0
+soundfile==0.13.1
+loguru==0.7.3
+einops==0.8.2
+accelerate==1.12.0
+scipy
+numba>=0.63.1
+vector-quantize-pytorch>=1.27.15
+pytorch-wavelets==1.3.0
+pywavelets>=1.9.0
+peft==0.18.1
+psutil
+setuptools<72

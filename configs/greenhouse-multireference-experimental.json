@@ -1,0 +1,90 @@
+{
+  "name": "greenhouse_reference_video",
+  "image_variant": "distilled",
+  "stages": [
+    {
+      "name": "character_front",
+      "prompt_file": "prompts/reference-character.txt",
+      "width": 768,
+      "height": 1152,
+      "seed": 20260913,
+      "references": []
+    },
+    {
+      "name": "character_side",
+      "prompt_file": "prompts/reference-side.txt",
+      "width": 768,
+      "height": 1152,
+      "seed": 20260914,
+      "references": [
+        "character_front"
+      ]
+    },
+    {
+      "name": "character_back",
+      "prompt_file": "prompts/reference-back.txt",
+      "width": 768,
+      "height": 1152,
+      "seed": 20260915,
+      "references": [
+        "character_front"
+      ]
+    },
+    {
+      "name": "scene",
+      "prompt_file": "prompts/reference-scene.txt",
+      "width": 1344,
+      "height": 768,
+      "seed": 20260916,
+      "references": []
+    },
+    {
+      "name": "prop",
+      "prompt_file": "prompts/reference-prop-clean.txt",
+      "width": 1024,
+      "height": 1024,
+      "seed": 20260917,
+      "references": []
+    },
+    {
+      "name": "firstframe_composite",
+      "variant": "base",
+      "prompt_file": "prompts/reference-firstframe-composite.txt",
+      "width": 1344,
+      "height": 768,
+      "seed": 20260918,
+      "references": [
+        "character_front",
+        "scene",
+        "prop"
+      ]
+    },
+    {
+      "name": "firstframe",
+      "variant": "base",
+      "prompt_file": "prompts/reference-firstframe-clean.txt",
+      "width": 1344,
+      "height": 768,
+      "seed": 20260920,
+      "references": [
+        "firstframe_composite"
+      ]
+    }
+  ],
+  "video": {
+    "prompt_file": "prompts/greenhouse-h3-clean.txt",
+    "references": [
+      "character_front",
+      "scene",
+      "prop",
+      "firstframe"
+    ],
+    "width": 1344,
+    "height": 768,
+    "seconds": 10,
+    "seed": 20260919,
+    "steps": 4,
+    "head_chunks": 4,
+    "ffn_chunks": 8
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "repo": "Comfy-Org/MiniMax-H3",
+  "revision": "a98869194787969724c7425d95d0ed73ce9202af",
+  "files": [
+    {
+      "path": "diffusion_models/minimax_h3_ref2va_pruned_fp8_scaled.safetensors",
+      "size": 20958205608,
+      "sha256": "f86f2f79ebd2d76eb8eeb46091e83982e6ff51d255747e7b16e92834b392b8e9"
+    },
+    {
+      "path": "loras/minimax_h3_ref2v_turbo_4step_v0.1_comfyui_bf16.safetensors",
+      "size": 1956193000,
+      "sha256": "5b9ab5ade15d0775676d01a907268a69a1468dc6033b3b0d3ded5502f3ebb84c"
+    }
+  ]
+}

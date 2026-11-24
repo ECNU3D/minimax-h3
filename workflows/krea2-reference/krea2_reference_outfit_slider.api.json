@@ -1,0 +1,238 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "krea2_raw_fp8_scaled.safetensors",
+      "weight_dtype": "default"
+    },
+    "_meta": {
+      "title": "模型 | Krea 2 RAW FP8"
+    }
+  },
+  "2": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_4b_fp8_scaled.safetensors",
+      "type": "krea2",
+      "device": "default"
+    },
+    "_meta": {
+      "title": "模型 | Qwen3-VL FP8"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "qwen_image_vae.safetensors"
+    },
+    "_meta": {
+      "title": "模型 | VAE"
+    }
+  },
+  "4": {
+    "class_type": "LoraLoaderModelOnly",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "lora_name": "krea2_turbo_lora_rank_64_bf16.safetensors",
+      "strength_model": 1.0
+    },
+    "_meta": {
+      "title": "加速 | Turbo 1.0"
+    }
+  },
+  "15": {
+    "class_type": "LoraLoaderModelOnly",
+    "inputs": {
+      "model": [
+        "4",
+        0
+      ],
+      "lora_name": "krea2_identity_edit_v1_2_r64.safetensors",
+      "strength_model": 1.0
+    },
+    "_meta": {
+      "title": "人物编辑 | Identity Edit r64 / 1.0"
+    }
+  },
+  "5": {
+    "class_type": "LoraLoaderModelOnly",
+    "inputs": {
+      "model": [
+        "15",
+        0
+      ],
+      "lora_name": "breast_size_v2_krea2_loraholic.safetensors",
+      "strength_model": 0.0
+    },
+    "_meta": {
+      "title": "③ 丰满度 | 0=关闭；先试 -1 / 0 / +1"
+    }
+  },
+  "13": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "krea2_reference_person.png"
+    },
+    "_meta": {
+      "title": "① 上传人物参考图"
+    }
+  },
+  "14": {
+    "class_type": "VAEEncode",
+    "inputs": {
+      "pixels": [
+        "13",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "参考图编码"
+    }
+  },
+  "6": {
+    "class_type": "Krea2EditGroundedEncode",
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "prompt": "Change her navy T-shirt to a fully opaque burgundy long-sleeve crew-neck knit sweater. Keep the same person, facial features, hairstyle, pose, beige trousers, background and lighting. Natural clothing catalog photograph.",
+      "image": [
+        "13",
+        0
+      ],
+      "grounding_px": 768,
+      "system_prompt": ""
+    },
+    "_meta": {
+      "title": "② 换装指令 | 写想改变的内容"
+    }
+  },
+  "7": {
+    "class_type": "Krea2EditGroundedEncode",
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "prompt": "",
+      "image": [
+        "13",
+        0
+      ],
+      "grounding_px": 768,
+      "system_prompt": ""
+    },
+    "_meta": {
+      "title": "负向 | 保持空白"
+    }
+  },
+  "8": {
+    "class_type": "EmptySD3LatentImage",
+    "inputs": {
+      "width": 768,
+      "height": 1024,
+      "batch_size": 1
+    },
+    "_meta": {
+      "title": "分辨率 | 768×1024 / 单张"
+    }
+  },
+  "16": {
+    "class_type": "Krea2EditModelPatch",
+    "inputs": {
+      "model": [
+        "5",
+        0
+      ],
+      "source_latent": [
+        "14",
+        0
+      ],
+      "ref_boost": 4.0,
+      "ref_boost_a": 1.0,
+      "fit_mode": "fit",
+      "vae": [
+        "3",
+        0
+      ],
+      "source_image": [
+        "13",
+        0
+      ],
+      "target_latent": [
+        "8",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "④ 参考保持 | ref_boost 默认 4"
+    }
+  },
+  "9": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "16",
+        0
+      ],
+      "positive": [
+        "6",
+        0
+      ],
+      "negative": [
+        "7",
+        0
+      ],
+      "latent_image": [
+        "8",
+        0
+      ],
+      "seed": 20260921,
+      "steps": 10,
+      "cfg": 1.0,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "denoise": 1.0
+    },
+    "_meta": {
+      "title": "⑤ 生成 | 固定 seed 便于比较"
+    }
+  },
+  "10": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "9",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "解码"
+    }
+  },
+  "11": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "10",
+        0
+      ],
+      "filename_prefix": "krea2-reference/outfit"
+    },
+    "_meta": {
+      "title": "结果 | 保存到 krea2-reference"
+    }
+  }
+}

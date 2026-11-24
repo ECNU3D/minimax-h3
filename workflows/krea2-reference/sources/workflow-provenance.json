@@ -1,0 +1,13 @@
+{
+  "source": "https://github.com/lbouaraba/comfyui-krea2edit/blob/86f886dac23013d88996e3a2e99093ba44d322fb/workflows/krea2_identity_edit.json",
+  "sha256": "6b3911daebeff489038b92dfbc3dc5e8a851abbcf0a38c916be2dbf3af19aae3",
+  "adaptations": [
+    "single reference",
+    "RAW FP8 + existing Turbo adapter",
+    "r64 identity adapter",
+    "optional body slider default off",
+    "768x1024",
+    "core resolution node",
+    "schema-checked wiring"
+  ]
+}

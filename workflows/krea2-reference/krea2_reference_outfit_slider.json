@@ -1,0 +1,858 @@
+{
+  "last_node_id": 17,
+  "last_link_id": 21,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "UNETLoader",
+      "title": "模型 | Krea 2 RAW FP8",
+      "pos": [
+        20,
+        20
+      ],
+      "size": [
+        350,
+        90
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            1
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "UNETLoader"
+      },
+      "widgets_values": [
+        "krea2_raw_fp8_scaled.safetensors",
+        "default"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "CLIPLoader",
+      "title": "模型 | Qwen3-VL FP8",
+      "pos": [
+        20,
+        150
+      ],
+      "size": [
+        350,
+        115
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            6,
+            8
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPLoader"
+      },
+      "widgets_values": [
+        "qwen3vl_4b_fp8_scaled.safetensors",
+        "krea2",
+        "default"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "VAELoader",
+      "title": "模型 | VAE",
+      "pos": [
+        20,
+        305
+      ],
+      "size": [
+        350,
+        70
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            5,
+            12,
+            20
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAELoader"
+      },
+      "widgets_values": [
+        "qwen_image_vae.safetensors"
+      ]
+    },
+    {
+      "id": 4,
+      "type": "LoraLoaderModelOnly",
+      "title": "加速 | Turbo 1.0",
+      "pos": [
+        410,
+        20
+      ],
+      "size": [
+        370,
+        110
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 1
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            2
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoraLoaderModelOnly"
+      },
+      "widgets_values": [
+        "krea2_turbo_lora_rank_64_bf16.safetensors",
+        1.0
+      ]
+    },
+    {
+      "id": 15,
+      "type": "LoraLoaderModelOnly",
+      "title": "人物编辑 | Identity Edit r64 / 1.0",
+      "pos": [
+        410,
+        180
+      ],
+      "size": [
+        370,
+        110
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 2
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            3
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoraLoaderModelOnly"
+      },
+      "widgets_values": [
+        "krea2_identity_edit_v1_2_r64.safetensors",
+        1.0
+      ]
+    },
+    {
+      "id": 5,
+      "type": "LoraLoaderModelOnly",
+      "title": "③ 丰满度 | 0=关闭；先试 -1 / 0 / +1",
+      "pos": [
+        410,
+        340
+      ],
+      "size": [
+        370,
+        115
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 3
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            10
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoraLoaderModelOnly"
+      },
+      "widgets_values": [
+        "breast_size_v2_krea2_loraholic.safetensors",
+        0.0
+      ]
+    },
+    {
+      "id": 13,
+      "type": "LoadImage",
+      "title": "① 上传人物参考图",
+      "pos": [
+        20,
+        470
+      ],
+      "size": [
+        350,
+        530
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            4,
+            7,
+            9,
+            13
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": []
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "krea2_reference_person.png",
+        "image"
+      ]
+    },
+    {
+      "id": 14,
+      "type": "VAEEncode",
+      "title": "参考图编码",
+      "pos": [
+        410,
+        850
+      ],
+      "size": [
+        300,
+        70
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "pixels",
+          "type": "IMAGE",
+          "link": 4
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 5
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            11
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAEEncode"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 6,
+      "type": "Krea2EditGroundedEncode",
+      "title": "② 换装指令 | 写想改变的内容",
+      "pos": [
+        830,
+        20
+      ],
+      "size": [
+        440,
+        310
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 6
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 7
+        },
+        {
+          "name": "image_b",
+          "type": "IMAGE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            16
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Krea2EditGroundedEncode"
+      },
+      "widgets_values": [
+        "Change her navy T-shirt to a fully opaque burgundy long-sleeve crew-neck knit sweater. Keep the same person, facial features, hairstyle, pose, beige trousers, background and lighting. Natural clothing catalog photograph.",
+        768,
+        ""
+      ]
+    },
+    {
+      "id": 7,
+      "type": "Krea2EditGroundedEncode",
+      "title": "负向 | 保持空白",
+      "pos": [
+        830,
+        385
+      ],
+      "size": [
+        440,
+        225
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 8
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 9
+        },
+        {
+          "name": "image_b",
+          "type": "IMAGE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            17
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Krea2EditGroundedEncode"
+      },
+      "widgets_values": [
+        "",
+        768,
+        ""
+      ]
+    },
+    {
+      "id": 8,
+      "type": "EmptySD3LatentImage",
+      "title": "分辨率 | 768×1024 / 单张",
+      "pos": [
+        410,
+        530
+      ],
+      "size": [
+        370,
+        120
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            14,
+            18
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "EmptySD3LatentImage"
+      },
+      "widgets_values": [
+        768,
+        1024,
+        1
+      ]
+    },
+    {
+      "id": 16,
+      "type": "Krea2EditModelPatch",
+      "title": "④ 参考保持 | ref_boost 默认 4",
+      "pos": [
+        830,
+        675
+      ],
+      "size": [
+        440,
+        295
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 10
+        },
+        {
+          "name": "source_latent",
+          "type": "LATENT",
+          "link": 11
+        },
+        {
+          "name": "source_latent_b",
+          "type": "LATENT",
+          "link": null
+        },
+        {
+          "name": "ref_boost_mask",
+          "type": "MASK",
+          "link": null
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 12
+        },
+        {
+          "name": "source_image",
+          "type": "IMAGE",
+          "link": 13
+        },
+        {
+          "name": "source_image_b",
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "target_latent",
+          "type": "LATENT",
+          "link": 14
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            15
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Krea2EditModelPatch"
+      },
+      "widgets_values": [
+        4.0,
+        1.0,
+        "fit"
+      ]
+    },
+    {
+      "id": 9,
+      "type": "KSampler",
+      "title": "⑤ 生成 | 固定 seed 便于比较",
+      "pos": [
+        1320,
+        20
+      ],
+      "size": [
+        350,
+        340
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 15
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 16
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 17
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 18
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            19
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "KSampler"
+      },
+      "widgets_values": [
+        20260921,
+        "fixed",
+        10,
+        1.0,
+        "euler",
+        "simple",
+        1.0
+      ]
+    },
+    {
+      "id": 10,
+      "type": "VAEDecode",
+      "title": "解码",
+      "pos": [
+        1320,
+        420
+      ],
+      "size": [
+        350,
+        70
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 19
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 20
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            21
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAEDecode"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 11,
+      "type": "SaveImage",
+      "title": "结果 | 保存到 krea2-reference",
+      "pos": [
+        1720,
+        20
+      ],
+      "size": [
+        520,
+        700
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 21
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": []
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "krea2-reference/outfit"
+      ]
+    },
+    {
+      "id": 17,
+      "type": "Note",
+      "title": "使用说明",
+      "pos": [
+        1320,
+        800
+      ],
+      "size": [
+        430,
+        280
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "①上传人物图 → ②写换装指令 → 运行。默认 slider=0。\nref_boost=4，grounding_px=768，10 步，CFG=1，denoise=1。\n实测：参考模式换装有效，但 slider 0/+2 的丰满度变化很弱。\n若需体型微调，把换装结果交给 krea2_local_clothed_adjust。\n脸部相似度不是绝对锁定，请检查结果。来源与实测见 README.md。"
+      ]
+    }
+  ],
+  "links": [
+    [
+      1,
+      1,
+      0,
+      4,
+      0,
+      "MODEL"
+    ],
+    [
+      2,
+      4,
+      0,
+      15,
+      0,
+      "MODEL"
+    ],
+    [
+      3,
+      15,
+      0,
+      5,
+      0,
+      "MODEL"
+    ],
+    [
+      4,
+      13,
+      0,
+      14,
+      0,
+      "IMAGE"
+    ],
+    [
+      5,
+      3,
+      0,
+      14,
+      1,
+      "VAE"
+    ],
+    [
+      6,
+      2,
+      0,
+      6,
+      0,
+      "CLIP"
+    ],
+    [
+      7,
+      13,
+      0,
+      6,
+      1,
+      "IMAGE"
+    ],
+    [
+      8,
+      2,
+      0,
+      7,
+      0,
+      "CLIP"
+    ],
+    [
+      9,
+      13,
+      0,
+      7,
+      1,
+      "IMAGE"
+    ],
+    [
+      10,
+      5,
+      0,
+      16,
+      0,
+      "MODEL"
+    ],
+    [
+      11,
+      14,
+      0,
+      16,
+      1,
+      "LATENT"
+    ],
+    [
+      12,
+      3,
+      0,
+      16,
+      4,
+      "VAE"
+    ],
+    [
+      13,
+      13,
+      0,
+      16,
+      5,
+      "IMAGE"
+    ],
+    [
+      14,
+      8,
+      0,
+      16,
+      7,
+      "LATENT"
+    ],
+    [
+      15,
+      16,
+      0,
+      9,
+      0,
+      "MODEL"
+    ],
+    [
+      16,
+      6,
+      0,
+      9,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      17,
+      7,
+      0,
+      9,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      18,
+      8,
+      0,
+      9,
+      3,
+      "LATENT"
+    ],
+    [
+      19,
+      9,
+      0,
+      10,
+      0,
+      "LATENT"
+    ],
+    [
+      20,
+      3,
+      0,
+      10,
+      1,
+      "VAE"
+    ],
+    [
+      21,
+      10,
+      0,
+      11,
+      0,
+      "IMAGE"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "version": 0.4,
+  "extra": {
+    "ds": {
+      "scale": 0.58,
+      "offset": [
+        40,
+        50
+      ]
+    },
+    "frontendVersion": "1.51.10"
+  }
+}
